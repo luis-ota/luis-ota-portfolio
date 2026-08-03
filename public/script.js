@@ -131,6 +131,14 @@
   }
   if (caret) caret.style.display = terminal ? "inline-block" : "none";
 
+  /* ---------- voltar ao topo (logo e rodapé) ---------- */
+  document.querySelectorAll('a[href="#topo"]').forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: reduzido ? "auto" : "smooth" });
+    });
+  });
+
   /* ---------- ano dinâmico no rodapé ---------- */
   var ano = document.getElementById("ano");
   if (ano) ano.textContent = String(new Date().getFullYear());

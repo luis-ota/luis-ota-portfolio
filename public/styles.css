@@ -1,5 +1,5 @@
 /* ============================================================
-   luis-ota · portfólio — design "ficha técnica / engenharia"
+   luis-ota · portfólio · design "ficha técnica / engenharia"
    papel quente · tinta · verde pinheiro · laranja sinal
    ============================================================ */
 
@@ -192,8 +192,9 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   background: var(--pinheiro);
   color: var(--papel);
   border-radius: 9px;
-  font-size: 1rem;
+  flex: none;
 }
+.brand-mark svg { width: 17px; height: 17px; }
 
 .site-nav ul { display: flex; gap: 28px; }
 .site-nav a {
@@ -785,8 +786,8 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   width: 26px;
   height: 26px;
   border-radius: 7px;
-  font-size: 0.78rem;
 }
+.footer-marca .brand-mark svg { width: 13px; height: 13px; }
 .footer-texto { font-size: 0.82rem; color: var(--tinta-suave); }
 .footer-voltar {
   font-family: var(--fonte-mono);
@@ -823,12 +824,18 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 
 @media (max-width: 760px) {
   .section { padding: 64px 0; }
+  .container { padding: 0 20px; }
   .servicos-grid { grid-template-columns: 1fr; }
   .projeto { flex-direction: column; align-items: flex-start; gap: 20px; }
   .projeto-glyph { display: none; }
   .hero-stats { gap: 16px; }
   .tech-note { display: none; }
   .terminal-body { min-height: 180px; font-size: 0.8rem; }
+  .hero { padding: 56px 0 64px; }
+  .hero-actions { flex-direction: column; }
+  .hero-actions .btn { width: 100%; justify-content: center; }
+  .section-head { margin-bottom: 40px; }
+  .ficha-lista { padding: 6px 18px; }
 
   .site-nav, .nav-cta { display: none; }
   .nav-toggle { display: flex; flex-direction: column; gap: 5px; padding: 8px; }
@@ -864,4 +871,14 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .ficha-linha { grid-template-columns: 1fr; gap: 4px; }
   .card, .canais, .agendamento-card { padding: 28px 24px; }
   .projeto { padding: 24px 22px; }
+}
+
+@media (max-width: 400px) {
+  .hero-title { font-size: 2rem; }
+  .hero-stats { grid-template-columns: 1fr; }
+  .hero-stats .stat:nth-child(3) { grid-column: auto; }
+  .hero-stats { border-top: 0; padding-top: 0; }
+  .hero-stats .stat { border-top: 1px solid var(--linha); padding-top: 14px; }
+  .terminal-body { font-size: 0.72rem; min-height: 160px; }
+  .terminal-title { display: none; }
 }
