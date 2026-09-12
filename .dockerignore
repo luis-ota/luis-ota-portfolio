@@ -4,3 +4,9 @@ README.md
 node_modules
 *.log
 .DS_Store
+
+.env
+.github
+deploy
+docker-compose*.yml
+PRODUCT.md
