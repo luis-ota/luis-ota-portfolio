@@ -89,7 +89,7 @@ jobs:
             set -e
             cd ~/luis-ota-portfolio
             docker compose pull --quiet
-            docker compose up -d --remove-orphans
+            docker compose up -d --remove-orphans --force-recreate
             docker image prune -f >/dev/null
           '
 
