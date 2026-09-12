@@ -2,6 +2,7 @@
 
 Site de portfólio do **Luís Otávio Silva Santos**, desenvolvedor full-stack em Curitiba, PR.
 Página única, estática e leve — sem build, sem dependências, sem framework.
+Inglês como idioma padrão, com seletor para português (a preferência fica salva no navegador).
 Agendamento direto pelo WhatsApp, sem serviços externos.
 
 ## Como rodar
@@ -20,13 +21,7 @@ Para parar:
 docker compose down
 ```
 
-### Opção 2 — Podman
-
-```bash
-podman compose up --build -d
-```
-
-### Opção 3 — Bun (sem contêiner)
+### Opção 2 — Bun (sem contêiner)
 
 ```bash
 bun server.ts
@@ -37,19 +32,55 @@ Acesse em **http://localhost:3000**
 ## Estrutura
 
 ```
-luis-portfolio/
-├── public/          # site estático (HTML, CSS, JS)
-├── server.ts        # servidor HTTP com Bun.serve (zero dependências)
-├── Dockerfile       # imagem baseada em oven/bun
-├── docker-compose.yml
-└── .dockerignore
+luis-ota-portfolio/
+├── public/                    # site estático (HTML, CSS, JS, i18n)
+│   ├── index.html             # conteúdo em inglês (padrão)
+│   ├── i18n.js                # dicionário EN/PT-BR e troca de idioma
+│   ├── script.js              # interações (menu, reveal, terminal)
+│   └── styles.css             # tokens e estilos
+├── deploy/docker-compose.yml  # compose usado na VPS (imagem do GHCR)
+├── .github/workflows/deploy.yml  # CI/CD: build → GHCR → SSH → deploy
+├── server.ts                  # servidor HTTP com Bun.serve (zero dependências)
+├── Dockerfile                 # imagem baseada em oven/bun
+└── docker-compose.yml         # compose local (build)
 ```
+
+## Idiomas
+
+O inglês é o padrão. O botão `EN / PT` no cabeçalho alterna para português;
+a escolha é guardada em `localStorage` e o `lang` do documento, o título e as
+metatags são atualizados junto. Os textos ficam em `public/i18n.js` no objeto
+`DICIONARIO` (chaves `en` e `pt`) — para mudar qualquer copy, edite os dois.
+
+## Deploy (CI/CD)
+
+Todo push na `main` dispara `.github/workflows/deploy.yml`:
+
+1. **build** — constrói a imagem Docker e publica em `ghcr.io/luis-ota/luis-ota-portfolio`
+   (`latest` e `sha-<commit>`), com cache do GitHub Actions.
+2. **deploy** — por SSH, copia `deploy/docker-compose.yml` para `~/luis-ota-portfolio`
+   na VPS, roda `docker compose pull` e `docker compose up -d`, e faz um smoke test
+   em `http://127.0.0.1:3000/`.
+
+O Nginx da VPS faz proxy de `https://portfolio.wired.rs` para `127.0.0.1:3000`.
+
+### Secrets necessários (Settings → Secrets and variables → Actions)
+
+| Secret | Valor |
+|---|---|
+| `DEPLOY_HOST` | `163.176.208.60` |
+| `DEPLOY_USER` | `ubuntu` |
+| `DEPLOY_SSH_KEY` | chave privada ed25519 autorizada na VPS |
+| `DEPLOY_KNOWN_HOSTS` | saída de `ssh-keyscan -H 163.176.208.60` |
+
+Para rodar o deploy manualmente: **Actions → Deploy → Run workflow**.
 
 ## Personalização
 
-- **Contatos**: tudo editável em `public/index.html` (WhatsApp, e-mail, LinkedIn,
-  GitHub e blog). O botão de agendamento abre o WhatsApp com uma mensagem pré-preenchida.
+- **Contatos**: em `public/index.html` (WhatsApp, e-mail, LinkedIn, GitHub).
+  O botão de agendamento abre `agendar.wired.rs`.
 - **Cores e identidade**: tokens CSS no topo de `public/styles.css`.
+- **Copy em inglês/português**: `public/i18n.js`.
 
 ## Licença
 

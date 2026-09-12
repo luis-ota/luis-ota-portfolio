@@ -3,7 +3,12 @@
 (function () {
   "use strict";
 
+  var i18n = window.I18N;
   var reduzido = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function t(chave) {
+    return i18n ? i18n.t(chave) : "";
+  }
 
   /* ---------- header com borda ao rolar ---------- */
   var header = document.querySelector(".site-header");
@@ -16,19 +21,26 @@
   /* ---------- menu mobile ---------- */
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.querySelector(".site-nav");
+
+  function rotularMenu(aberto) {
+    toggle.setAttribute("aria-label", aberto ? t("nav.closeMenu") : t("nav.openMenu"));
+  }
+
   toggle.addEventListener("click", function () {
     var aberto = nav.classList.toggle("aberto");
     toggle.classList.toggle("aberto", aberto);
     toggle.setAttribute("aria-expanded", String(aberto));
-    toggle.setAttribute("aria-label", aberto ? "Fechar menu" : "Abrir menu");
+    rotularMenu(aberto);
   });
   nav.querySelectorAll("a").forEach(function (link) {
     link.addEventListener("click", function () {
       nav.classList.remove("aberto");
       toggle.classList.remove("aberto");
       toggle.setAttribute("aria-expanded", "false");
+      rotularMenu(false);
     });
   });
+  rotularMenu(false);
 
   /* ---------- reveal on scroll ---------- */
   var revelaveis = document.querySelectorAll(".reveal");
@@ -56,28 +68,33 @@
   /* ---------- typewriter do terminal ---------- */
   var terminal = document.getElementById("typewriter");
   var caret = document.getElementById("caret");
+  var geracao = 0;
 
-  var linhas = [
-    { texto: "luis-ota@curitiba: ~", classe: "prompt" },
-    { texto: "$ luis --stack", classe: "prompt" },
-    { texto: "web ..... next.js · react · typescript", classe: "ok" },
-    { texto: "mobile .. flutter · dart · firebase", classe: "ok" },
-    { texto: "auto .... python · apis · scripts", classe: "ok" },
-    { texto: "ai ...... rag · gemini · agentes", classe: "ok" },
-    { texto: "rust .... swaptop · cli · tokio", classe: "ok" },
-  ];
+  function linhasAtuais() {
+    return i18n ? i18n.linhasTerminal() : [];
+  }
+
+  function renderizarInstantaneo() {
+    if (!terminal) return;
+    geracao++;
+    var linhas = linhasAtuais();
+    terminal.textContent = "";
+    linhas.forEach(function (texto, indice) {
+      var div = document.createElement("div");
+      div.className = "linha " + (indice <= 1 ? "prompt" : "ok");
+      div.textContent = texto;
+      terminal.appendChild(div);
+    });
+  }
 
   function typewriter() {
     if (!terminal) return;
+    var minhaGeracao = ++geracao;
+    var linhas = linhasAtuais();
     terminal.textContent = "";
 
     if (reduzido) {
-      linhas.forEach(function (linha) {
-        var div = document.createElement("div");
-        div.className = "linha " + linha.classe;
-        div.textContent = linha.texto;
-        terminal.appendChild(div);
-      });
+      renderizarInstantaneo();
       return;
     }
 
@@ -86,20 +103,21 @@
     var acelerar = false;
 
     function digitar() {
+      if (minhaGeracao !== geracao) return;
       if (li >= linhas.length) return;
-      var linha = linhas[li];
+      var texto = linhas[li];
 
       if (ci === 0) {
         var div = document.createElement("div");
-        div.className = "linha " + linha.classe;
+        div.className = "linha " + (li <= 1 ? "prompt" : "ok");
         terminal.appendChild(div);
       }
 
-      var div = terminal.lastElementChild;
-      div.textContent = linha.texto.slice(0, ci + 1);
+      var divAtual = terminal.lastElementChild;
+      divAtual.textContent = texto.slice(0, ci + 1);
       ci++;
 
-      if (ci >= linha.texto.length) {
+      if (ci >= texto.length) {
         li++;
         ci = 0;
         if (li === 1) acelerar = true;
@@ -114,8 +132,13 @@
     setTimeout(digitar, 500);
   }
 
+  /* troca de idioma: cancela a digitação e redesenha na hora */
+  document.addEventListener("langchange", function () {
+    renderizarInstantaneo();
+  });
+
   /* espera o evento de visibilidade do terminal para digitar */
-  if ("IntersectionObserver" in window && !reduzido) {
+  if (terminal && "IntersectionObserver" in window && !reduzido) {
     var tObs = new IntersectionObserver(
       function (entradas) {
         if (entradas[0].isIntersecting) {

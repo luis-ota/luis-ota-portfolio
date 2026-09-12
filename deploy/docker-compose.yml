@@ -1,0 +1,7 @@
+services:
+  portifolio:
+    image: ghcr.io/luis-ota/luis-ota-portfolio:latest
+    container_name: luis-ota-portfolio
+    ports:
+      - "127.0.0.1:3000:3000"
+    restart: unless-stopped
