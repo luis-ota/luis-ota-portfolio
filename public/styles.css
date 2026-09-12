@@ -223,6 +223,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   font-size: 0.95rem;
   font-weight: 500;
   margin-right: auto;
+  white-space: nowrap;
 }
 .brand-mark {
   display: inline-flex;
@@ -254,6 +255,11 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 
 @media (max-width: 900px) {
   .nav-cta { display: none; }
+  .brand { min-height: 44px; }
+  .lang-opcao { min-height: 44px; padding: 0 10px; }
+  .lang-opcao::after { left: 10px; right: 10px; bottom: 8px; }
+  .nav-toggle { min-width: 44px; min-height: 44px; align-items: center; justify-content: center; }
+  .footer-voltar { display: inline-flex; align-items: center; min-height: 44px; }
 }
 
 .nav-toggle { display: none; }
@@ -886,13 +892,14 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 .canal-icone svg { width: 18px; height: 18px; }
 
-.canal-info { display: flex; flex-direction: column; }
+.canal-info { display: flex; flex-direction: column; min-width: 0; }
 .canal-nome { font-size: 0.78rem; color: var(--tinta-suave); }
 .canal-valor {
   font-size: 0.95rem;
   font-weight: 500;
   color: var(--tinta);
   transition: color 0.2s ease;
+  overflow-wrap: anywhere;
 }
 .canal-seta {
   margin-left: auto;
@@ -971,7 +978,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 
 /* ---------- responsivo ---------- */
 @media (max-width: 960px) {
-  .hero-grid, .sobre-grid, .contato-grid { grid-template-columns: 1fr; gap: 56px; }
+  .hero-grid, .sobre-grid, .contato-grid { grid-template-columns: minmax(0, 1fr); gap: 56px; }
   .hero { padding: 72px 0; }
   .tec-grid { grid-template-columns: repeat(2, 1fr); }
 }
@@ -1036,6 +1043,9 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 
 @media (max-width: 400px) {
+  .header-inner { gap: 12px; }
+  .lang-opcao { padding: 0 6px; }
+  .brand { font-size: 0.9rem; }
   .hero-title { font-size: 2rem; }
   .hero-stats { grid-template-columns: 1fr; }
   .hero-stats .stat:nth-child(3) { grid-column: auto; }
