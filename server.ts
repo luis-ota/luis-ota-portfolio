@@ -1,6 +1,11 @@
 const PORTA = Number(process.env.PORT || 3000);
 const RAIZ = new URL("./public", import.meta.url).pathname;
 
+// Destino estável do Instagram da Isa: o portfólio sempre linka /instagram.
+// Se ela trocar o @, atualize só esta constante (e o texto em public/i18n.js).
+const INSTAGRAM_URL =
+  process.env.INSTAGRAM_URL || "https://www.instagram.com/isacreates.comm/";
+
 const TIPOS: Record<string, string> = {
   ".html": "text/html; charset=utf-8",
   ".css": "text/css; charset=utf-8",
@@ -41,6 +46,17 @@ const servidor = Bun.serve({
   async fetch(req) {
     const url = new URL(req.url);
     let caminho = decodeURIComponent(url.pathname);
+
+    if (caminho === "/instagram" || caminho === "/instagram/") {
+      return new Response(null, {
+        status: 302,
+        headers: {
+          location: INSTAGRAM_URL,
+          "cache-control": "no-store",
+          ...CABECALHOS_FIXOS,
+        },
+      });
+    }
 
     if (caminho === "/") caminho = "/index.html";
     if (caminho.includes("..")) {

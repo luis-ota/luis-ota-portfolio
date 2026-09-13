@@ -97,6 +97,10 @@ Para rodar o deploy manualmente: **Actions → Deploy → Run workflow**.
   O botão de agendamento abre `agendar.wired.rs`.
 - **Cores e identidade**: tokens CSS no topo de `public/styles.css`.
 - **Copy em inglês/português**: `public/i18n.js`.
+- **Instagram do depoimento**: o site aponta para `/instagram`, um redirect
+  estável definido em `server.ts` (`INSTAGRAM_URL`). Se o @ mudar, atualize a
+  constante e o texto `relato1.handle` em `public/i18n.js` — o link do portfólio
+  continua o mesmo.
 
 ## Licença
 

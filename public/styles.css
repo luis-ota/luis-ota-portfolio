@@ -253,8 +253,13 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .nav-cta { padding: 10px 14px 10px 18px; font-size: 0.88rem; }
 .nav-cta .btn-icon { width: 26px; height: 26px; }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .nav-cta { display: none; }
+  .site-nav ul { gap: 16px; }
+  .site-nav a { font-size: 0.88rem; }
+}
+
+@media (max-width: 900px) {
   .brand { min-height: 44px; }
   .lang-opcao { min-height: 44px; padding: 0 10px; }
   .lang-opcao::after { left: 10px; right: 10px; bottom: 8px; }
@@ -743,7 +748,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 /* ---------- tecnologias ---------- */
 .tec-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
 }
 
@@ -780,6 +785,78 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   border-color: var(--pinheiro);
   color: var(--papel);
   transform: translateY(-1px);
+}
+
+/* ---------- relatos ---------- */
+.relato {
+  max-width: 860px;
+  border: 1px solid var(--linha-forte);
+  border-radius: var(--raio-grande);
+  background: var(--papel);
+  overflow: hidden;
+}
+.relato-topo {
+  font-family: var(--fonte-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--papel);
+  background: var(--pinheiro);
+  padding: 14px 32px;
+}
+.relato-quote {
+  font-family: var(--fonte-display);
+  font-style: italic;
+  font-size: clamp(1.25rem, 2.4vw, 1.7rem);
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+  color: var(--tinta);
+  padding: 34px 32px 6px;
+  text-wrap: pretty;
+}
+.relato-autor {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding: 18px 32px 26px;
+}
+.relato-avatar {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--linha-forte);
+  border-radius: 10px;
+  background: var(--papel-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--fonte-mono);
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--pinheiro);
+}
+.relato-info { display: flex; flex-direction: column; margin-right: auto; }
+.relato-nome { font-size: 0.96rem; font-weight: 600; }
+.relato-cargo { font-size: 0.8rem; color: var(--tinta-suave); }
+.relato-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 0;
+  font-family: var(--fonte-mono);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--pinheiro);
+  text-decoration: underline;
+  text-decoration-color: var(--linha-forte);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  transition: color 0.25s var(--ease-out), text-decoration-color 0.25s var(--ease-out);
+}
+.relato-link:hover {
+  color: var(--sinal-texto);
+  text-decoration-color: var(--sinal);
 }
 
 /* ---------- contato ---------- */
@@ -1008,7 +1085,6 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 @media (max-width: 960px) {
   .hero-grid, .sobre-grid, .contato-grid { grid-template-columns: minmax(0, 1fr); gap: 56px; }
   .hero { padding: 72px 0; }
-  .tec-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 760px) {
@@ -1061,12 +1137,14 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 
 @media (max-width: 520px) {
-  .tec-grid { grid-template-columns: 1fr; }
   .hero-stats { grid-template-columns: 1fr 1fr; }
   .hero-stats .stat:nth-child(3) { grid-column: span 2; }
   .ficha-linha { grid-template-columns: 1fr; gap: 4px; }
   .card, .canais, .agendamento-card { padding: 28px 24px; }
   .projeto { padding: 24px 22px; }
+  .relato-topo { padding: 12px 22px; }
+  .relato-quote { padding: 26px 22px 4px; }
+  .relato-autor { padding: 14px 22px 20px; }
   .lang-switch { font-size: 0.74rem; }
 }
 

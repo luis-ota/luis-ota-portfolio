@@ -47,6 +47,13 @@ default language with a Brazilian Portuguese option.
 - Public, linkable projects: AfroRetratos (live site + GitHub), AppTransportadora
   and rag-ai-chat (GitHub), Swaptop (GitHub + crates.io). The factory ticketing
   system stays anonymous, with no client names, logos, testimonials, or links.
+- One client review is shown: Isa Creates (AfroRetratos). The current quote is a
+  draft prepared at the owner's request and must be confirmed with her before it
+  is treated as verified copy; only real, approved testimonials may be added.
+- The review's Instagram link uses the stable `/instagram` redirect from
+  `server.ts` (`INSTAGRAM_URL`), so the URL survives a handle change.
+- Stack highlights include Expo/React Native, Redis, and RabbitMQ alongside the
+  existing services, technologies, marquee, and terminal.
 - SEO metadata, JSON-LD, robots.txt, and sitemap.xml must stay valid.
 - Respect `prefers-reduced-motion`; keep the page lightweight and fast.
 

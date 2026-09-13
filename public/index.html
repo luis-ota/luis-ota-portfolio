@@ -43,7 +43,7 @@
       "addressRegion": "PR",
       "addressCountry": "BR"
     },
-    "knowsAbout": ["Next.js", "React", "TypeScript", "Flutter", "Expo", "React Native", "Python", "FastAPI", "PostgreSQL", "Docker", "Nginx", "Linux", "Rust", "Artificial Intelligence", "RAG", "Automation", "Infrastructure", "CI/CD"],
+    "knowsAbout": ["Next.js", "React", "TypeScript", "Expo", "React Native", "Flutter", "Python", "FastAPI", "PostgreSQL", "Redis", "RabbitMQ", "Docker", "Nginx", "Linux", "Rust", "Artificial Intelligence", "RAG", "Automation", "Messaging", "Infrastructure", "CI/CD"],
     "worksFor": {
       "@type": "Organization",
       "name": "Wired Layer Co.",
@@ -106,6 +106,7 @@
           <li><a href="#servicos" data-i18n="nav.services">Services</a></li>
           <li><a href="#projetos" data-i18n="nav.projects">Projects</a></li>
           <li><a href="#tecnologias" data-i18n="nav.tech">Technologies</a></li>
+          <li><a href="#relatos" data-i18n="nav.reviews">Reviews</a></li>
           <li><a href="#contato" data-i18n="nav.contact">Contact</a></li>
           <li class="nav-item-cta"><a href="https://agendar.wired.rs" target="_blank" rel="noopener" data-i18n="nav.cta">Book a call</a></li>
         </ul>
@@ -201,10 +202,12 @@
         <span>flutter</span><i>◆</i><span>expo</span><i>◆</i><span>python</span><i>◆</i>
         <span>fastapi</span><i>◆</i><span>postgresql</span><i>◆</i><span>docker</span><i>◆</i>
         <span>nginx</span><i>◆</i><span>linux</span><i>◆</i><span>llm / rag</span><i>◆</i>
+        <span>redis</span><i>◆</i><span>rabbitmq</span><i>◆</i>
         <span>next.js</span><i>◆</i><span>react</span><i>◆</i><span>typescript</span><i>◆</i>
         <span>flutter</span><i>◆</i><span>expo</span><i>◆</i><span>python</span><i>◆</i>
         <span>fastapi</span><i>◆</i><span>postgresql</span><i>◆</i><span>docker</span><i>◆</i>
         <span>nginx</span><i>◆</i><span>linux</span><i>◆</i><span>llm / rag</span><i>◆</i>
+        <span>redis</span><i>◆</i><span>rabbitmq</span><i>◆</i>
       </div>
     </div>
 
@@ -292,14 +295,15 @@
               <li data-i18n="s1.l1">Institutional and sales websites</li>
               <li data-i18n="s1.l2">Control and management panels</li>
               <li data-i18n="s1.l3">Payment and API integrations</li>
+              <li data-i18n="s1.l4">Cache, queues, and messaging (Redis, RabbitMQ)</li>
             </ul>
           </article>
           <article class="card reveal">
             <span class="card-tag" data-i18n="s2.tag">mobile</span>
             <h3 data-i18n="s2.title">Mobile apps</h3>
             <p data-i18n="s2.p">
-              Cross-platform apps (Android and iOS) with Flutter or Expo (React Native) and
-              Firebase for service, delivery, or customer support management.
+              Cross-platform apps (Android and iOS) with Expo (React Native) or Flutter,
+              integrated with Firebase, APIs, and push notifications.
             </p>
             <ul class="card-lista">
               <li data-i18n="s2.l1">Apps for field teams</li>
@@ -492,7 +496,7 @@
           <div class="tec-grupo">
             <h3 data-i18n="tec.mobile">Mobile</h3>
             <ul>
-              <li>Flutter</li><li>Expo / React Native</li>
+              <li>Expo / React Native</li><li>Flutter</li>
             </ul>
           </div>
           <div class="tec-grupo">
@@ -507,7 +511,43 @@
               <li>Docker</li><li>Git</li><li>GitHub Actions</li><li>Nginx</li><li>Vercel</li><li>Cloudflare</li><li>Linux (Arch/Ubuntu)</li>
             </ul>
           </div>
+          <div class="tec-grupo">
+            <h3 data-i18n="tec.messaging">Messaging &amp; cache</h3>
+            <ul>
+              <li>Redis</li><li>RabbitMQ</li>
+            </ul>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="section relatos" id="relatos">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span><span data-i18n="relatos.eyebrow">Client reviews</span></p>
+          <h2 class="section-title" data-i18n="relatos.title">What clients say about working with me</h2>
+        </div>
+        <figure class="relato reveal">
+          <p class="relato-topo" data-i18n="relato1.context">Client review · AfroRetratos</p>
+          <blockquote class="relato-quote" data-i18n="relato1.quote">
+            Luís built the AfroRetratos platform exactly as we envisioned: fast, easy to use, and
+            with a level of finish I rarely see. Communication was clear from day one, every
+            detail was handled with care, and the result went beyond what we expected. I
+            recommend him without hesitation.
+          </blockquote>
+          <figcaption class="relato-autor">
+            <span class="relato-avatar" aria-hidden="true">IC</span>
+            <span class="relato-info">
+              <span class="relato-nome">Isa Creates</span>
+              <span class="relato-cargo" data-i18n="relato1.role">Content creator · AfroRetratos</span>
+            </span>
+            <a class="relato-link" href="/instagram" target="_blank" rel="noopener">
+              <span data-i18n="relato1.handle">@isacreates.comm</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </figcaption>
+        </figure>
       </div>
     </section>
 

@@ -20,6 +20,7 @@
       "nav.services": "Services",
       "nav.projects": "Projects",
       "nav.tech": "Technologies",
+      "nav.reviews": "Reviews",
       "nav.contact": "Contact",
       "nav.cta": "Book a call",
       "nav.openMenu": "Open menu",
@@ -71,10 +72,11 @@
       "s1.l1": "Institutional and sales websites",
       "s1.l2": "Control and management panels",
       "s1.l3": "Payment and API integrations",
+      "s1.l4": "Cache, queues, and messaging (Redis, RabbitMQ)",
       "s2.tag": "mobile",
       "s2.title": "Mobile apps",
       "s2.p":
-        "Cross-platform apps (Android and iOS) with Flutter or Expo (React Native) and Firebase for service, delivery, or customer support management.",
+        "Cross-platform apps (Android and iOS) with Expo (React Native) or Flutter, integrated with Firebase, APIs, and push notifications.",
       "s2.l1": "Apps for field teams",
       "s2.l2": "Delivery and service management",
       "s2.l3": "Real-time notifications",
@@ -130,6 +132,14 @@
       "tec.mobile": "Mobile",
       "tec.databases": "Databases",
       "tec.devops": "DevOps & Cloud",
+      "tec.messaging": "Messaging & cache",
+      "relatos.eyebrow": "Client reviews",
+      "relatos.title": "What clients say about working with me",
+      "relato1.context": "Client review · AfroRetratos",
+      "relato1.quote":
+        "Luís built the AfroRetratos platform exactly as we envisioned: fast, easy to use, and with a level of finish I rarely see. Communication was clear from day one, every detail was handled with care, and the result went beyond what we expected. I recommend him without hesitation.",
+      "relato1.role": "Content creator · AfroRetratos",
+      "relato1.handle": "@isacreates.comm",
       "contato.eyebrow": "Scheduling & contact",
       "contato.title": "Let's talk about your project?",
       "ag.badge": "Free discovery call",
@@ -151,7 +161,8 @@
         "mobile .. flutter · dart · firebase",
         "auto .... python · apis · scripts",
         "ai ...... rag · gemini · agents",
-        "rust .... swaptop · cli · tokio"
+        "rust .... swaptop · cli · tokio",
+        "queue ... redis · rabbitmq · workers"
       ]
     },
 
@@ -168,6 +179,7 @@
       "nav.services": "Serviços",
       "nav.projects": "Projetos",
       "nav.tech": "Tecnologias",
+      "nav.reviews": "Relatos",
       "nav.contact": "Contato",
       "nav.cta": "Agendar conversa",
       "nav.openMenu": "Abrir menu",
@@ -219,10 +231,11 @@
       "s1.l1": "Sites institucionais e de vendas",
       "s1.l2": "Painéis de controle e gestão",
       "s1.l3": "Integração com pagamentos e APIs",
+      "s1.l4": "Cache, filas e mensageria (Redis, RabbitMQ)",
       "s2.tag": "mobile",
       "s2.title": "Aplicativos mobile",
       "s2.p":
-        "Aplicativos multiplataforma (Android e iOS) com Flutter ou Expo (React Native) e Firebase para gestão de serviços, entregas ou atendimento ao cliente.",
+        "Aplicativos multiplataforma (Android e iOS) com Expo (React Native) ou Flutter, integrados a Firebase, APIs e notificações push.",
       "s2.l1": "Apps para equipes de campo",
       "s2.l2": "Gestão de entregas e serviços",
       "s2.l3": "Notificações em tempo real",
@@ -278,6 +291,14 @@
       "tec.mobile": "Mobile",
       "tec.databases": "Bancos de dados",
       "tec.devops": "DevOps & Cloud",
+      "tec.messaging": "Mensageria & cache",
+      "relatos.eyebrow": "Relatos de clientes",
+      "relatos.title": "O que dizem sobre trabalhar comigo",
+      "relato1.context": "Relato de cliente · AfroRetratos",
+      "relato1.quote":
+        "O Luís construiu a plataforma do AfroRetratos exatamente como imaginamos: rápida, fácil de usar e com um nível de acabamento que raramente vejo. A comunicação foi clara desde o primeiro dia, cada detalhe foi tratado com cuidado e o resultado superou o que esperávamos. Recomendo sem hesitar.",
+      "relato1.role": "Criadora de conteúdo · AfroRetratos",
+      "relato1.handle": "@isacreates.comm",
       "contato.eyebrow": "Agendamento & contato",
       "contato.title": "Vamos conversar sobre o seu projeto?",
       "ag.badge": "Reunião de diagnóstico gratuita",
@@ -299,7 +320,8 @@
         "mobile .. flutter · dart · firebase",
         "auto .... python · apis · scripts",
         "ai ...... rag · gemini · agentes",
-        "rust .... swaptop · cli · tokio"
+        "rust .... swaptop · cli · tokio",
+        "fila .... redis · rabbitmq · workers"
       ]
     }
   };
