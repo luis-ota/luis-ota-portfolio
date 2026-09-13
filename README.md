@@ -69,10 +69,10 @@ O Nginx da VPS faz proxy de `https://portfolio.wired.rs` para `127.0.0.1:3000`.
 
 | Secret | Valor |
 |---|---|
-| `DEPLOY_HOST` | `163.176.208.60` |
+| `DEPLOY_HOST` | `<DEPLOY_HOST>` |
 | `DEPLOY_USER` | `ubuntu` |
 | `DEPLOY_SSH_KEY` | chave privada ed25519 com forced command na VPS |
-| `DEPLOY_KNOWN_HOSTS` | saída de `ssh-keyscan -H 163.176.208.60` |
+| `DEPLOY_KNOWN_HOSTS` | saída de `ssh-keyscan -H <DEPLOY_HOST>` |
 
 Para rodar o deploy manualmente: **Actions → Deploy → Run workflow**.
 
