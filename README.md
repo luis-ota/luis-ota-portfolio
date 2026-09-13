@@ -56,7 +56,9 @@ metatags são atualizados junto. Os textos ficam em `public/i18n.js` no objeto
 Todo push na `main` dispara `.github/workflows/deploy.yml`:
 
 1. **build** — constrói a imagem Docker e publica em `ghcr.io/luis-ota/luis-ota-portfolio`
-   (`latest` e `sha-<commit>`), com cache do GitHub Actions.
+   (`latest` e `sha-<commit>`), com cache do GitHub Actions. Antes do build, o job
+   estampa o SHA do commit nos assets do `index.html` (`?v=<sha>`), então nenhum
+   cache (Cloudflare ou navegador) serve CSS/JS antigo após um deploy.
 2. **deploy** — por SSH, executa o script `/usr/local/bin/deploy-luis-ota-portfolio`
    na VPS (forçado pela própria chave), que atualiza o compose, roda
    `docker compose pull` + `up -d --force-recreate` e valida `http://127.0.0.1:3000/`.
