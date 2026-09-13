@@ -41,12 +41,12 @@ default language with a Brazilian Portuguese option.
 - Served by `server.ts` (Bun) in Docker; deploy target is an Ubuntu VPS with
   Docker, Docker Compose, and Nginx reverse proxy in front.
 - Bilingual: English default, PT-BR toggle, client-side, preference persisted.
-- Confirmed facts only: Swaptop 2,500+ downloads, PUCPR Software Engineering
-  undergraduate, the anonymous project descriptions, and the published
-  contact details (WhatsApp, e-mail, LinkedIn, GitHub, location).
-- AfroRetratos is the one named, public project: may be linked to its live site
-  (afroretratos.wired.rs) and GitHub repo. All other client work stays anonymous
-  with no client names, logos, or testimonials.
+- Confirmed facts only: Swaptop with 3,028 downloads (crates.io), PUCPR Software
+  Engineering undergraduate, the project descriptions, and the published contact
+  details (WhatsApp, e-mail, LinkedIn, GitHub, location).
+- Public, linkable projects: AfroRetratos (live site + GitHub), AppTransportadora
+  and rag-ai-chat (GitHub), Swaptop (GitHub + crates.io). The factory ticketing
+  system stays anonymous, with no client names, logos, testimonials, or links.
 - SEO metadata, JSON-LD, robots.txt, and sitemap.xml must stay valid.
 - Respect `prefers-reduced-motion`; keep the page lightweight and fast.
 
@@ -63,10 +63,13 @@ plain-spoken, outcome-focused English in EN mode. No fabricated proof.
   Drizzle, Redis, Tailwind CSS, Docker) with event agenda and anonymous
   moderated community feed, built for a PUCPR advertising and cinema collective.
   Live: https://afroretratos.wired.rs · Code: github.com/luis-ota/afroretratos
-- Four anonymized projects: freight/delivery mobile app (Flutter, Firebase);
-  AI data analysis and RAG platform (Python, LlamaIndex, Gemini); factory
-  ticketing and monitoring web system (Next.js, Flask, PostgreSQL); Swaptop CLI
-  (Rust, Tokio) with 2,500+ downloads.
+- Freight/delivery mobile app (Flutter, Firebase): github.com/luis-ota/AppTransportadora
+- AI data analysis and RAG platform (Python, Streamlit, LlamaIndex, Gemini):
+  github.com/luis-ota/rag-ai-chat
+- Swaptop CLI (Rust, Tokio), 3,028 downloads: github.com/luis-ota/swaptop ·
+  crates.io/crates/swaptop
+- Factory ticketing and monitoring web system (Next.js, Flask, PostgreSQL):
+  client work, no public link.
 - Live site: https://portfolio.wired.rs
 - Source: github.com/luis-ota/luis-ota-portfolio
 
