@@ -138,7 +138,7 @@
       "relato1.context": "Client review · AfroRetratos",
       "relato1.quote":
         "Luís built the AfroRetratos platform exactly as we envisioned: fast, easy to use, and with a level of finish I rarely see. Communication was clear from day one, every detail was handled with care, and the result went beyond what we expected. I recommend him without hesitation.",
-      "relato1.role": "Content creator · AfroRetratos",
+      "relato1.role": "Advertising & Propaganda · AfroRetratos",
       "relato1.handle": "@isacreates.comm",
       "contato.eyebrow": "Scheduling & contact",
       "contato.title": "Let's talk about your project?",
@@ -297,7 +297,7 @@
       "relato1.context": "Relato de cliente · AfroRetratos",
       "relato1.quote":
         "O Luís construiu a plataforma do AfroRetratos exatamente como imaginamos: rápida, fácil de usar e com um nível de acabamento que raramente vejo. A comunicação foi clara desde o primeiro dia, cada detalhe foi tratado com cuidado e o resultado superou o que esperávamos. Recomendo sem hesitar.",
-      "relato1.role": "Criadora de conteúdo · AfroRetratos",
+      "relato1.role": "Publicidade e Propaganda · AfroRetratos",
       "relato1.handle": "@isacreates.comm",
       "contato.eyebrow": "Agendamento & contato",
       "contato.title": "Vamos conversar sobre o seu projeto?",
