@@ -47,8 +47,8 @@ default language with a Brazilian Portuguese option.
 - Public, linkable projects: AfroRetratos (live site + GitHub), AppTransportadora
   and rag-ai-chat (GitHub), Swaptop (GitHub + crates.io). The factory ticketing
   system stays anonymous, with no client names, logos, testimonials, or links.
-- One client review is shown: Isabella Monteiro (@isacreates.comm), Advertising
-  and Propaganda student at PUCPR, about AfroRetratos. The current quote is a
+- One client review is shown: Isabella Monteiro (@isacreates.comm), advertising
+  professional (publicitária), about AfroRetratos. The current quote is a
   draft prepared at the owner's request and must be confirmed with her before it
   is treated as verified copy; only real, approved testimonials may be added.
 - The review's Instagram link uses the stable `/instagram` redirect from
