@@ -162,6 +162,10 @@
     });
   });
 
+  /* ---------- e-mail: restaura o mailto se o Cloudflare ofuscar ---------- */
+  var linkEmail = document.querySelector("a[data-email]");
+  if (linkEmail) linkEmail.setAttribute("href", "mailto:" + linkEmail.getAttribute("data-email"));
+
   /* ---------- ano dinâmico no rodapé ---------- */
   var ano = document.getElementById("ano");
   if (ano) ano.textContent = String(new Date().getFullYear());
