@@ -42,19 +42,27 @@ default language with a Brazilian Portuguese option.
   Docker, Docker Compose, and Nginx reverse proxy in front.
 - Bilingual: English default, PT-BR toggle, client-side, preference persisted.
 - Confirmed facts only: Swaptop 2,500+ downloads, PUCPR Software Engineering
-  undergraduate, the four anonymous project descriptions, and the published
+  undergraduate, the anonymous project descriptions, and the published
   contact details (WhatsApp, e-mail, LinkedIn, GitHub, location).
-- No client names, logos, or testimonials may be added; projects stay anonymous.
+- AfroRetratos is the one named, public project: may be linked to its live site
+  (afroretratos.wired.rs) and GitHub repo. All other client work stays anonymous
+  with no client names, logos, or testimonials.
 - SEO metadata, JSON-LD, robots.txt, and sitemap.xml must stay valid.
 - Respect `prefers-reduced-motion`; keep the page lightweight and fast.
 
 ## Brand Commitments
 
-Name and handle `luis-ota`. Brazilian Portuguese voice in PT mode; direct,
+Name and handle `luis-ota`. Luís Otávio operates as **Wired Layer Co.**, his
+software studio; the company name appears in the about copy, spec sheet, footer,
+metadata, and JSON-LD. Brazilian Portuguese voice in PT mode; direct,
 plain-spoken, outcome-focused English in EN mode. No fabricated proof.
 
 ## Evidence on Hand
 
+- AfroRetratos: live cultural platform (Next.js 16, React 19, PostgreSQL,
+  Drizzle, Redis, Tailwind CSS, Docker) with event agenda and anonymous
+  moderated community feed, built for a PUCPR advertising and cinema collective.
+  Live: https://afroretratos.wired.rs · Code: github.com/luis-ota/afroretratos
 - Four anonymized projects: freight/delivery mobile app (Flutter, Firebase);
   AI data analysis and RAG platform (Python, LlamaIndex, Gemini); factory
   ticketing and monitoring web system (Next.js, Flask, PostgreSQL); Swaptop CLI

@@ -10,7 +10,7 @@
     en: {
       "meta.title": "Luís Otávio · Full-Stack Developer in Curitiba",
       "meta.description":
-        "Full-stack developer based in Curitiba, Brazil. Custom websites, software systems, mobile apps, process automation, and AI solutions for your business.",
+        "Full-stack developer at Wired Layer Co., based in Curitiba, Brazil. Custom websites, software systems, mobile apps, process automation, and AI solutions for your business.",
       "meta.ogTitle": "Luís Otávio · Full-Stack Developer in Curitiba",
       "meta.ogDescription": "Software, web, mobile, and automation solutions for your business.",
       "meta.ogLocale": "en_US",
@@ -29,7 +29,7 @@
       "hero.eyebrow": "Full-Stack Developer · Curitiba, Brazil",
       "hero.title": "Software, web, mobile, and automation solutions for your business",
       "hero.sub":
-        'I\'m <strong>Luís Otávio</strong>, a full-stack developer based in Curitiba, Brazil. I build web applications, custom systems, mobile apps, and process automations that solve real problems for companies and entrepreneurs.',
+        'I\'m <strong>Luís Otávio</strong>, full-stack developer at <strong>Wired Layer Co.</strong> in Curitiba, Brazil. I build web applications, custom systems, mobile apps, and process automations that solve real problems for companies and entrepreneurs.',
       "hero.ctaPrimary": "Book a conversation",
       "hero.ctaSecondary": "View projects",
       "hero.stat1dt": "2,500+",
@@ -42,13 +42,14 @@
       "sobre.eyebrow": "About me",
       "sobre.title": "From Curitiba, building software that solves real problems",
       "sobre.p1":
-        "I work on software solutions aimed at solving real problems for companies and entrepreneurs. I have hands-on experience building RESTful APIs, web applications with Next.js and React, mobile apps with Flutter, Python automation, and data integration.",
+        "I lead <strong>Wired Layer Co.</strong>, a software studio based in Curitiba. I build solutions aimed at solving real problems for companies and entrepreneurs, with hands-on experience in RESTful APIs, web applications with Next.js and React, mobile apps with Flutter, Python automation, and data integration.",
       "sobre.p2":
         "My track record includes software projects in manufacturing and technology companies, covering everything from process automation to complete web platforms and AI-based solutions.",
       "sobre.quote": "Good software is measured by the outcome, not by the technology behind it.",
       "sobre.fichaAria": "Spec sheet",
       "sobre.fichaTitle": "Spec sheet",
       "sobre.fName": "Name",
+      "sobre.fCompany": "Company",
       "sobre.fRole": "Role",
       "sobre.fRoleV": "Full-Stack Developer",
       "sobre.fEdu": "Education",
@@ -100,6 +101,11 @@
       "s5.l3": "Data analysis with generative AI",
       "projetos.eyebrow": "Selected projects",
       "projetos.title": "Work that has already shipped",
+      "p0.tag": "cultural platform",
+      "p0.title": "AfroRetratos cultural platform with anonymous feed",
+      "p0.desc":
+        "Event agenda, institutional pages, and an anonymous community feed with moderation, built for a collective of advertising and cinema students at PUCPR.",
+      "p0.live": "Live site",
       "p1.tag": "mobile",
       "p1.title": "Freight and delivery management app",
       "p1.desc":
@@ -136,7 +142,7 @@
       "canais.email": "Email",
       "canais.location": "Location",
       "canais.locationV": "Curitiba, PR · Brazil",
-      "footer.text": "Luís Otávio Silva Santos · Full-Stack Developer · Curitiba, Brazil",
+      "footer.text": "Wired Layer Co. · Luís Otávio Silva Santos · Full-Stack Developer · Curitiba, Brazil",
       "footer.back": "Back to top ↑",
       "terminal.lines": [
         "luis-ota@curitiba: ~",
@@ -152,7 +158,7 @@
     pt: {
       "meta.title": "Luís Otávio · Desenvolvedor Full-Stack em Curitiba",
       "meta.description":
-        "Desenvolvedor Full-Stack em Curitiba. Criação de sites, sistemas sob medida, aplicativos mobile, automação de processos e soluções com inteligência artificial para o seu negócio.",
+        "Desenvolvedor Full-Stack na Wired Layer Co., em Curitiba. Criação de sites, sistemas sob medida, aplicativos mobile, automação de processos e soluções com inteligência artificial para o seu negócio.",
       "meta.ogTitle": "Luís Otávio · Desenvolvedor Full-Stack em Curitiba",
       "meta.ogDescription": "Soluções em software, web, mobile e automação para o seu negócio.",
       "meta.ogLocale": "pt_BR",
@@ -171,7 +177,7 @@
       "hero.eyebrow": "Desenvolvedor Full-Stack · Curitiba, PR",
       "hero.title": "Soluções em software, web, mobile e automação para o seu negócio",
       "hero.sub":
-        'Sou o <strong>Luís Otávio</strong>, desenvolvedor full-stack em Curitiba. Crio aplicações web, sistemas sob medida, aplicativos mobile e automações de processos que resolvem problemas reais de empresas e empreendedores.',
+        'Sou o <strong>Luís Otávio</strong>, desenvolvedor full-stack na <strong>Wired Layer Co.</strong>, em Curitiba. Crio aplicações web, sistemas sob medida, aplicativos mobile e automações de processos que resolvem problemas reais de empresas e empreendedores.',
       "hero.ctaPrimary": "Agendar uma conversa",
       "hero.ctaSecondary": "Ver projetos",
       "hero.stat1dt": "2.500+",
@@ -184,13 +190,14 @@
       "sobre.eyebrow": "Sobre mim",
       "sobre.title": "De Curitiba, construindo software que resolve problemas reais",
       "sobre.p1":
-        "Atuo no desenvolvimento de soluções de software voltadas para resolver problemas reais de empresas e empreendedores. Tenho experiência prática no desenvolvimento de APIs RESTful, aplicações web com Next.js e React, aplicativos móveis com Flutter, automação de rotinas em Python e integração de dados.",
+        "À frente da <strong>Wired Layer Co.</strong>, estúdio de software em Curitiba, desenvolvo soluções voltadas a resolver problemas reais de empresas e empreendedores. Tenho experiência prática no desenvolvimento de APIs RESTful, aplicações web com Next.js e React, aplicativos móveis com Flutter, automação de rotinas em Python e integração de dados.",
       "sobre.p2":
         "Minha trajetória inclui projetos de desenvolvimento de sistemas em indústrias e empresas de tecnologia, cobrindo desde a automação de processos até a criação de plataformas web completas e soluções baseadas em Inteligência Artificial.",
       "sobre.quote": "Software bem feito se mede pelo resultado, não pela tecnologia usada.",
       "sobre.fichaAria": "Ficha técnica",
       "sobre.fichaTitle": "Ficha técnica",
       "sobre.fName": "Nome",
+      "sobre.fCompany": "Empresa",
       "sobre.fRole": "Função",
       "sobre.fRoleV": "Desenvolvedor Full-Stack",
       "sobre.fEdu": "Formação",
@@ -242,6 +249,11 @@
       "s5.l3": "Análise de dados com IA generativa",
       "projetos.eyebrow": "Projetos em destaque",
       "projetos.title": "Trabalhos que já saíram do papel",
+      "p0.tag": "plataforma cultural",
+      "p0.title": "Plataforma cultural AfroRetratos com feed anônimo",
+      "p0.desc":
+        "Agenda de eventos, páginas institucionais e feed anônimo da comunidade com moderação, feito para um coletivo de estudantes de Publicidade e Cinema da PUCPR.",
+      "p0.live": "Site no ar",
       "p1.tag": "mobile",
       "p1.title": "App de gestão de fretes e entregas",
       "p1.desc":
@@ -278,7 +290,7 @@
       "canais.email": "E-mail",
       "canais.location": "Localização",
       "canais.locationV": "Curitiba, PR · Brasil",
-      "footer.text": "Luís Otávio Silva Santos · Desenvolvedor Full-Stack · Curitiba, PR",
+      "footer.text": "Wired Layer Co. · Luís Otávio Silva Santos · Desenvolvedor Full-Stack · Curitiba, PR",
       "footer.back": "Voltar ao início ↑",
       "terminal.lines": [
         "luis-ota@curitiba: ~",

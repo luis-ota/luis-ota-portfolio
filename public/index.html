@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Luís Otávio · Full-Stack Developer in Curitiba</title>
-  <meta name="description" content="Full-stack developer based in Curitiba, Brazil. Custom websites, software systems, mobile apps, process automation, and AI solutions for your business.">
+  <meta name="description" content="Full-stack developer at Wired Layer Co., based in Curitiba, Brazil. Custom websites, software systems, mobile apps, process automation, and AI solutions for your business.">
   <meta name="author" content="Luís Otávio Silva Santos">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#2C4636">
@@ -12,7 +12,7 @@
   <link rel="canonical" href="https://portfolio.wired.rs/">
 
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Luís Otávio · Portfolio">
+  <meta property="og:site_name" content="Wired Layer Co.">
   <meta property="og:url" content="https://portfolio.wired.rs/">
   <meta property="og:title" content="Luís Otávio · Full-Stack Developer in Curitiba">
   <meta property="og:description" content="Software, web, mobile, and automation solutions for your business.">
@@ -44,6 +44,11 @@
       "addressCountry": "BR"
     },
     "knowsAbout": ["Next.js", "React", "TypeScript", "Flutter", "Expo", "React Native", "Python", "FastAPI", "PostgreSQL", "Docker", "Nginx", "Linux", "Rust", "Artificial Intelligence", "RAG", "Automation", "Infrastructure", "CI/CD"],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Wired Layer Co.",
+      "url": "https://portfolio.wired.rs/"
+    },
     "sameAs": [
       "https://www.linkedin.com/in/luis-ota",
       "https://github.com/luis-ota"
@@ -136,9 +141,9 @@
             <span data-i18n="hero.title">Software, web, mobile, and automation solutions for your business</span>
           </h1>
           <p class="hero-sub reveal" data-i18n-html="hero.sub">
-            I'm <strong>Luís Otávio</strong>, a full-stack developer based in Curitiba, Brazil. I build
-            web applications, custom systems, mobile apps, and process automations that solve real
-            problems for companies and entrepreneurs.
+            I'm <strong>Luís Otávio</strong>, full-stack developer at <strong>Wired Layer Co.</strong>
+            in Curitiba, Brazil. I build web applications, custom systems, mobile apps, and process
+            automations that solve real problems for companies and entrepreneurs.
           </p>
           <div class="hero-actions reveal">
             <a class="btn btn-primary" href="https://agendar.wired.rs" target="_blank" rel="noopener">
@@ -212,11 +217,11 @@
         </div>
         <div class="sobre-grid">
           <div class="sobre-texto reveal">
-            <p data-i18n="sobre.p1">
-              I work on software solutions aimed at solving real problems for companies and
-              entrepreneurs. I have hands-on experience building RESTful APIs, web applications
-              with Next.js and React, mobile apps with Flutter, Python automation, and data
-              integration.
+            <p data-i18n-html="sobre.p1">
+              I lead <strong>Wired Layer Co.</strong>, a software studio based in Curitiba. I build
+              solutions aimed at solving real problems for companies and entrepreneurs, with
+              hands-on experience in RESTful APIs, web applications with Next.js and React, mobile
+              apps with Flutter, Python automation, and data integration.
             </p>
             <p data-i18n="sobre.p2">
               My track record includes software projects in manufacturing and technology companies,
@@ -233,6 +238,10 @@
               <div class="ficha-linha">
                 <dt data-i18n="sobre.fName">Name</dt>
                 <dd>Luís Otávio Silva Santos</dd>
+              </div>
+              <div class="ficha-linha">
+                <dt data-i18n="sobre.fCompany">Company</dt>
+                <dd>Wired Layer Co.</dd>
               </div>
               <div class="ficha-linha">
                 <dt data-i18n="sobre.fRole">Role</dt>
@@ -349,6 +358,30 @@
           <h2 class="section-title" data-i18n="projetos.title">Work that has already shipped</h2>
         </div>
         <div class="projetos-lista">
+          <article class="projeto reveal">
+            <div class="projeto-info">
+              <p class="projeto-meta"><span class="projeto-tag" data-i18n="p0.tag">cultural platform</span><span>Next.js · PostgreSQL · Redis</span></p>
+              <h3 data-i18n="p0.title">AfroRetratos cultural platform with anonymous feed</h3>
+              <p class="projeto-desc" data-i18n="p0.desc">
+                Event agenda, institutional pages, and an anonymous community feed with moderation,
+                built for a collective of advertising and cinema students at PUCPR.
+              </p>
+              <p class="projeto-tec">Next.js 16 · React 19 · TypeScript · PostgreSQL · Drizzle · Redis · Tailwind CSS · Docker</p>
+              <p class="projeto-links">
+                <a href="https://afroretratos.wired.rs/" target="_blank" rel="noopener">
+                  <span data-i18n="p0.live">Live site</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+                <a href="https://github.com/luis-ota/afroretratos" target="_blank" rel="noopener">
+                  GitHub
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </p>
+            </div>
+            <div class="projeto-glyph" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="17" r="7.5"/><path d="M10 42c1.5-8.5 7-13 14-13s12.5 4.5 14 13"/></svg>
+            </div>
+          </article>
           <article class="projeto reveal">
             <div class="projeto-info">
               <p class="projeto-meta"><span class="projeto-tag" data-i18n="p1.tag">mobile</span><span>Flutter · Dart · Firebase</span></p>
@@ -551,7 +584,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p class="footer-marca"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M7.5 9.25l2.75 2.75-2.75 2.75"/><path d="M13 14.75h3.75"/></svg></span> luis-ota</p>
-      <p class="footer-texto">© <span id="ano">2026</span> <span data-i18n="footer.text">Luís Otávio Silva Santos · Full-Stack Developer · Curitiba, Brazil</span></p>
+      <p class="footer-texto">© <span id="ano">2026</span> <span data-i18n="footer.text">Wired Layer Co. · Luís Otávio Silva Santos · Full-Stack Developer · Curitiba, Brazil</span></p>
       <a class="footer-voltar" href="#topo" data-i18n="footer.back">Back to top ↑</a>
     </div>
   </footer>

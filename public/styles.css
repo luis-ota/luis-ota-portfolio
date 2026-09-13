@@ -631,6 +631,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .projetos-lista .projeto:nth-child(2) { --d: 70ms; }
 .projetos-lista .projeto:nth-child(3) { --d: 140ms; }
 .projetos-lista .projeto:nth-child(4) { --d: 210ms; }
+.projetos-lista .projeto:nth-child(5) { --d: 280ms; }
 
 .projeto {
   display: flex;
@@ -687,6 +688,33 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   font-size: 0.76rem;
   color: var(--musgo-texto);
   margin-top: 16px;
+}
+
+.projeto-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 20px;
+  margin-top: 4px;
+}
+.projeto-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 0;
+  font-family: var(--fonte-mono);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--pinheiro);
+  text-decoration: underline;
+  text-decoration-color: var(--linha-forte);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  transition: color 0.25s var(--ease-out), text-decoration-color 0.25s var(--ease-out);
+}
+.projeto-links a span[aria-hidden] { font-size: 0.72rem; }
+.projeto-links a:hover {
+  color: var(--sinal-texto);
+  text-decoration-color: var(--sinal);
 }
 
 .projeto-glyph {
