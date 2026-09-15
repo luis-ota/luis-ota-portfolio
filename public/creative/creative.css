@@ -1,0 +1,124 @@
+/* ============================================================
+   portfolio creative · camadas de dados pontilhados e faíscas
+   Complementa /neo/styles.css: retratos em pontos, dither,
+   binário tipográfico, onda, globo e cintilações.
+   ============================================================ */
+
+/* ---------- camadas de fundo ---------- */
+
+.folha { position: relative; overflow: hidden; }
+.folha > .limite { position: relative; z-index: 2; }
+.cartaz > .cartaz-conteudo { position: relative; z-index: 2; }
+
+.fundo {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+}
+
+.fundo-abstrato {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.55;
+}
+
+.fundo-halftone {
+  top: 6%;
+  right: -5%;
+  width: min(48%, 430px);
+  opacity: 0.24;
+}
+
+.fundo-dither {
+  top: 9%;
+  left: -6%;
+  width: min(42%, 380px);
+  opacity: 0.2;
+}
+
+.fundo-binario {
+  top: 5%;
+  right: -3%;
+  width: min(40%, 360px);
+  opacity: 0.24;
+}
+
+.fundo-onda {
+  left: 0;
+  right: 0;
+  bottom: 4%;
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+
+.fundo-globo {
+  top: 8%;
+  right: 2%;
+  width: min(36%, 320px);
+  opacity: 0.32;
+}
+
+/* ---------- faíscas ---------- */
+
+.faiscas {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.cintila {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--t);
+  height: var(--t);
+  color: var(--indigo);
+  opacity: 0.35;
+  animation: cintilar var(--dur, 3.4s) ease-in-out infinite;
+  animation-delay: var(--atraso, 0s);
+}
+
+.cintila svg { width: 100%; height: 100%; display: block; }
+
+@keyframes cintilar {
+  0%, 100% { opacity: 0.16; transform: scale(0.68) rotate(0deg); }
+  50% { opacity: 0.78; transform: scale(1) rotate(14deg); }
+}
+
+.cartaz-final .cintila { color: var(--creme); }
+
+/* ---------- símbolos escondidos ---------- */
+
+.simbolos {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/* ---------- responsivo ---------- */
+
+@media (max-width: 900px) {
+  .fundo-halftone { width: min(64%, 340px); right: -12%; opacity: 0.18; }
+  .fundo-dither { width: min(58%, 320px); left: -12%; opacity: 0.16; }
+  .fundo-binario { width: min(56%, 320px); right: -10%; opacity: 0.18; }
+  .fundo-globo { width: min(46%, 260px); right: -6%; opacity: 0.24; }
+}
+
+@media (max-width: 560px) {
+  .fundo-halftone,
+  .fundo-dither,
+  .fundo-binario { opacity: 0.12; }
+  .fundo-globo { top: 4%; opacity: 0.18; }
+  .fundo-onda { bottom: 2%; opacity: 0.38; }
+  .cintila { opacity: 0.28; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cintila { animation: none; opacity: 0.4; }
+}
