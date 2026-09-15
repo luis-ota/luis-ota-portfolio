@@ -202,6 +202,28 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   align-items: center;
 }
 
+/* halo de papel atrás do texto: o padrão continua nas bordas, a leitura fica limpa */
+.cartaz-conteudo::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(780px, 94%);
+  height: 84%;
+  border-radius: 50%;
+  background: radial-gradient(
+    closest-side,
+    rgba(244, 241, 234, 0.96),
+    rgba(244, 241, 234, 0.86) 58%,
+    rgba(244, 241, 234, 0) 100%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.cartaz-conteudo > * { position: relative; z-index: 1; }
+
 .cartaz-kicker {
   font-size: 1.05rem;
   font-weight: 700;

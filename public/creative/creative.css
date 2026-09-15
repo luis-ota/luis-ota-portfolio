@@ -23,6 +23,9 @@
   height: 100%;
   object-fit: cover;
   opacity: 0.55;
+  /* abre o centro onde o texto do herói vive e mantém os dígitos nas bordas */
+  -webkit-mask-image: radial-gradient(58% 52% at 50% 44%, transparent 32%, #000 76%);
+  mask-image: radial-gradient(58% 52% at 50% 44%, transparent 32%, #000 76%);
 }
 
 .fundo-halftone {
