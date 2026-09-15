@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luís Otávio · Wired Layer Co.</title>
+  <meta name="description" content="I build professional portfolios for actors, freelancers, content creators, and photographers. Web, mobile, automation, and AI, by Wired Layer Co.">
+  <meta name="author" content="Luís Otávio Silva Santos">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#F4F1EA">
+  <meta name="color-scheme" content="light">
+  <link rel="canonical" href="https://portfolio.wired.rs/neo/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Wired Layer Co.">
+  <meta property="og:url" content="https://portfolio.wired.rs/neo/">
+  <meta property="og:title" content="Luís Otávio · Wired Layer Co.">
+  <meta property="og:description" content="Professional portfolios for actors, freelancers, content creators, and photographers.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:image" content="https://portfolio.wired.rs/og-image.png">
+
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem("luis-ota:lang") === "pt") {
+          document.documentElement.lang = "pt-BR";
+          document.documentElement.setAttribute("data-lang", "pt");
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/neo/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%232A2A8C'/><text x='50' y='72' font-size='62' font-family='Georgia,serif' font-style='italic' text-anchor='middle' fill='%23F4F1EA'>P</text></svg>">
+</head>
+<body id="topo">
+
+  <a class="pular" href="#conteudo" data-i18n="pular">Skip to content</a>
+
+  <header class="cabeca">
+    <div class="limite cabeca-linha">
+      <a class="marca" href="#topo"><span class="marca-selo" aria-hidden="true">P</span> luis-ota</a>
+      <nav class="nav" data-i18n-aria="nav.aria" aria-label="Main navigation">
+        <a href="#sobre" data-i18n="nav.sobre">About</a>
+        <a href="#servicos" data-i18n="nav.servicos">Services</a>
+        <a href="#projetos" data-i18n="nav.projetos">Projects</a>
+        <a href="#relatos" data-i18n="nav.relatos">Reviews</a>
+        <a href="#contato" data-i18n="nav.contato">Contact</a>
+      </nav>
+      <div class="cabeca-acoes">
+        <div class="idioma" role="group" data-i18n-aria="nav.idioma" aria-label="Language">
+          <button type="button" class="idioma-opcao" data-lang="en" aria-pressed="true">EN</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" class="idioma-opcao" data-lang="pt" aria-pressed="false">PT</button>
+        </div>
+        <a class="link-classico" href="/" data-i18n="nav.classico">classic version</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ============ CARTAZ ============ -->
+    <section class="cartaz">
+      <div class="cartaz-fundo" aria-hidden="true">
+        <svg viewBox="0 0 220 280" class="silhueta silhueta-binaria" preserveAspectRatio="xMidYMax meet">
+          <defs>
+            <pattern id="padrao-bin" width="20" height="26" patternUnits="userSpaceOnUse">
+              <text x="1" y="9" font-size="9" fill="#A9AEE6">0</text>
+              <text x="10" y="18" font-size="9" fill="#A9AEE6">1</text>
+              <text x="3" y="24" font-size="9" fill="#A9AEE6">1</text>
+              <text x="12" y="6" font-size="9" fill="#A9AEE6">0</text>
+            </pattern>
+            <clipPath id="corte-retrato">
+              <circle cx="110" cy="86" r="52" />
+              <path d="M66 140c-7 13-11 24-11 33-27 9-45 29-49 57-2 14-3 27-3 50h214c0-23-1-36-3-50-4-28-22-48-49-57 0-9-4-20-11-33-9 7-20 11-33 11s-24-4-33-11z" />
+            </clipPath>
+          </defs>
+          <rect width="220" height="280" fill="url(#padrao-bin)" clip-path="url(#corte-retrato)" />
+        </svg>
+      </div>
+
+      <div class="limite cartaz-conteudo">
+        <p class="cartaz-kicker" data-i18n="cartaz.kicker">I build your</p>
+        <h1 class="cartaz-script"><span data-i18n="cartaz.palavra">Portfolio</span></h1>
+        <p class="cartaz-oficio" data-i18n="cartaz.oficio">professional</p>
+        <p class="cartaz-publico" data-i18n-html="cartaz.publico">
+          for <strong>actors, freelancers, content creators, and photographers</strong>
+        </p>
+        <p class="cartaz-lead" data-i18n="cartaz.lead">
+          Identity, structure, and the site itself. The same studio that ships web, mobile,
+          automation, and AI builds portfolios that look like the work they present.
+        </p>
+        <div class="acoes">
+          <a class="btn btn-cheio" href="https://agendar.wired.rs" target="_blank" rel="noopener">
+            <span data-i18n="cartaz.cta">Book a conversation</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a class="btn btn-vazio" href="https://wa.me/5541998798238" target="_blank" rel="noopener">
+            <span data-i18n="cartaz.whats">WhatsApp</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <p class="selo-telefone">(41) 9 9879-8238</p>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE ============ -->
+    <section class="folha" id="sobre">
+      <div class="limite">
+        <div class="poster">
+          <div class="poster-fundo" aria-hidden="true">
+            <svg viewBox="0 0 220 280" class="silhueta silhueta-qr" preserveAspectRatio="xMidYMax meet">
+              <defs>
+                <pattern id="padrao-qr" width="26" height="26" patternUnits="userSpaceOnUse">
+                  <rect x="1" y="1" width="8" height="8" fill="#C3C7EF" />
+                  <rect x="14" y="5" width="5" height="5" fill="#C3C7EF" />
+                  <rect x="6" y="15" width="6" height="6" fill="#C3C7EF" />
+                  <rect x="18" y="17" width="6" height="6" fill="#C3C7EF" />
+                </pattern>
+                <clipPath id="corte-retrato-2">
+                  <circle cx="110" cy="86" r="52" />
+                  <path d="M66 140c-7 13-11 24-11 33-27 9-45 29-49 57-2 14-3 27-3 50h214c0-23-1-36-3-50-4-28-22-48-49-57 0-9-4-20-11-33-9 7-20 11-33 11s-24-4-33-11z" />
+                </clipPath>
+              </defs>
+              <rect width="220" height="280" fill="url(#padrao-qr)" clip-path="url(#corte-retrato-2)" />
+            </svg>
+          </div>
+          <h2 class="poster-script poster-script-vazado"><span data-i18n="sobre.palavra">who builds</span></h2>
+          <div class="poster-texto">
+            <p data-i18n-html="sobre.p1">
+              I'm <strong>Luís Otávio</strong>, a full-stack developer in Curitiba, Brazil, and
+              the person behind <strong>Wired Layer Co.</strong> I build portfolios and the
+              systems that carry them: web applications, mobile apps, automations, and AI.
+            </p>
+            <p data-i18n="sobre.p2">
+              Every portfolio is made for the person, not for a template: what you do, who
+              you want to reach, and how the work should be seen. Then the same hands build
+              the site, deploy it, and keep it running.
+            </p>
+          </div>
+          <dl class="ficha">
+            <div><dt data-i18n="ficha.nome">Name</dt><dd>Luís Otávio Silva Santos</dd></div>
+            <div><dt data-i18n="ficha.empresa">Company</dt><dd>Wired Layer Co.</dd></div>
+            <div><dt data-i18n="ficha.funcao">Role</dt><dd data-i18n="ficha.funcaoV">Full-Stack Developer</dd></div>
+            <div><dt data-i18n="ficha.formacao">Education</dt><dd data-i18n="ficha.formacaoV">Software Engineering · PUCPR</dd></div>
+            <div><dt data-i18n="ficha.local">Location</dt><dd data-i18n="ficha.localV">Curitiba, PR · Brazil</dd></div>
+            <div><dt data-i18n="ficha.foco">Focus</dt><dd data-i18n="ficha.focoV">Portfolios · Web · Mobile · Automation · AI</dd></div>
+            <div><dt data-i18n="ficha.dispo">Availability</dt><dd data-i18n="ficha.dispoV">Projects and partnerships</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVIÇOS ============ -->
+    <section class="folha folha-alt" id="servicos">
+      <div class="limite">
+        <p class="rotulo" data-i18n="servicos.rotulo">What I build</p>
+        <h2 class="titulo" data-i18n="servicos.titulo">A portfolio, and everything around it</h2>
+
+        <article class="destaque">
+          <p class="destaque-selo" data-i18n="destaque.selo">Signature service</p>
+          <h3 class="destaque-script"><span data-i18n="destaque.titulo">Professional portfolio</span></h3>
+          <p class="destaque-publico" data-i18n="destaque.publico">for actors, freelancers, content creators, and photographers</p>
+          <p class="destaque-texto" data-i18n="destaque.texto">
+            From the first conversation to the site online: how your work is organized,
+            written, and presented, plus a fast site you can share in any bio.
+          </p>
+          <ul class="destaque-lista">
+            <li data-i18n="destaque.l1">Portfolio site, ready to share</li>
+            <li data-i18n="destaque.l2">Structure and presentation of your work</li>
+            <li data-i18n="destaque.l3">Texts, sections, and calls to action</li>
+            <li data-i18n="destaque.l4">Domain, deploy, and updates</li>
+          </ul>
+          <a class="btn btn-claro" href="https://agendar.wired.rs" target="_blank" rel="noopener">
+            <span data-i18n="destaque.cta">Start my portfolio</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <ol class="servicos">
+          <li class="servico">
+            <span class="servico-num" aria-hidden="true">01</span>
+            <h3 data-i18n="s1.title">Web &amp; custom systems</h3>
+            <p data-i18n="s1.p">Web platforms, panels, dashboards, and landing pages with Next.js, React, TypeScript, and PostgreSQL, from prototype to production.</p>
+          </li>
+          <li class="servico">
+            <span class="servico-num" aria-hidden="true">02</span>
+            <h3 data-i18n="s2.title">Mobile apps</h3>
+            <p data-i18n="s2.p">Cross-platform apps with Expo (React Native) or Flutter, integrated with Firebase, APIs, and push notifications.</p>
+          </li>
+          <li class="servico">
+            <span class="servico-num" aria-hidden="true">03</span>
+            <h3 data-i18n="s3.title">Automation &amp; API integration</h3>
+            <p data-i18n="s3.p">Python routines that automate repetitive work, consolidate spreadsheets and reports, and connect platforms to each other.</p>
+          </li>
+          <li class="servico">
+            <span class="servico-num" aria-hidden="true">04</span>
+            <h3 data-i18n="s4.title">Infrastructure, deploy &amp; servers</h3>
+            <p data-i18n="s4.p">Linux servers, Docker, Nginx, SSL, and Cloudflare. Deploys with CI/CD and monitoring, for sites and applications.</p>
+          </li>
+          <li class="servico">
+            <span class="servico-num" aria-hidden="true">05</span>
+            <h3 data-i18n="s5.title">AI solutions</h3>
+            <p data-i18n="s5.p">Chatbots, data analysis agents, and RAG architectures for intelligent search across your documents.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROJETOS ============ -->
+    <section class="folha" id="projetos">
+      <div class="limite">
+        <p class="rotulo" data-i18n="projetos.rotulo">Selected projects</p>
+        <h2 class="titulo" data-i18n="projetos.titulo">Work that is already out there</h2>
+        <div class="projetos">
+          <article class="projeto">
+            <p class="projeto-meta"><span data-i18n="p0.tag">cultural platform</span> · Next.js · PostgreSQL · Redis</p>
+            <h3 data-i18n="p0.title">AfroRetratos cultural platform with anonymous feed</h3>
+            <p data-i18n="p0.desc">Event agenda, institutional pages, and an anonymous community feed with moderation, built for a collective of advertising and cinema students at PUCPR.</p>
+            <p class="projeto-links">
+              <a href="https://afroretratos.wired.rs/" target="_blank" rel="noopener" data-i18n="p0.live">Live site</a>
+              <a href="https://github.com/luis-ota/afroretratos" target="_blank" rel="noopener">GitHub</a>
+            </p>
+          </article>
+          <article class="projeto">
+            <p class="projeto-meta"><span data-i18n="p1.tag">mobile</span> · Flutter · Firebase</p>
+            <h3 data-i18n="p1.title">Freight and delivery management app</h3>
+            <p data-i18n="p1.desc">Cross-platform app for a transport company with shipment tracking, delivery management, and real-time notifications.</p>
+            <p class="projeto-links">
+              <a href="https://github.com/luis-ota/AppTransportadora" target="_blank" rel="noopener">GitHub</a>
+            </p>
+          </article>
+          <article class="projeto">
+            <p class="projeto-meta"><span data-i18n="p2.tag">artificial intelligence</span> · Python · LlamaIndex · Gemini</p>
+            <h3 data-i18n="p2.title">Intelligent data analysis and RAG platform</h3>
+            <p data-i18n="p2.desc">Semantic analysis and contextual search across documents, with a reactive agent and interactive dashboards.</p>
+            <p class="projeto-links">
+              <a href="https://github.com/luis-ota/rag-ai-chat" target="_blank" rel="noopener">GitHub</a>
+            </p>
+          </article>
+          <article class="projeto">
+            <p class="projeto-meta"><span data-i18n="p3.tag">web</span> · Next.js · Flask · PostgreSQL</p>
+            <h3 data-i18n="p3.title">Ticket management and monitoring dashboard</h3>
+            <p data-i18n="p3.desc">Web application for tracking technical requests in a factory environment, with metrics and an interactive map.</p>
+          </article>
+          <article class="projeto">
+            <p class="projeto-meta"><span data-i18n="p4.tag">tooling</span> · Rust · Tokio</p>
+            <h3 data-i18n="p4.title">Swaptop, a command-line tool</h3>
+            <p data-i18n="p4.desc">Utility for monitoring the Linux swap area, with 3,028 downloads since launch.</p>
+            <p class="projeto-links">
+              <a href="https://github.com/luis-ota/swaptop" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://crates.io/crates/swaptop" target="_blank" rel="noopener">crates.io</a>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RELATOS ============ -->
+    <section class="folha folha-alt" id="relatos">
+      <div class="limite">
+        <p class="rotulo" data-i18n="relatos.rotulo">Client review</p>
+        <figure class="relato">
+          <p class="relato-aspas" aria-hidden="true">“</p>
+          <blockquote data-i18n="relato.quote">
+            Luís built the AfroRetratos platform exactly as we envisioned: fast, easy to use,
+            and with a level of finish I rarely see. Communication was clear from day one and
+            the result went beyond what we expected.
+          </blockquote>
+          <figcaption>
+            <span class="relato-nome">Isabella Monteiro</span>
+            <span class="relato-cargo" data-i18n="relato.cargo">Publicitária · AfroRetratos</span>
+            <a class="relato-link" href="/instagram" target="_blank" rel="noopener">@isacreates.comm ↗</a>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ TECNOLOGIAS ============ -->
+    <section class="folha" id="tecnologias">
+      <div class="limite">
+        <p class="rotulo" data-i18n="tec.rotulo">Tools</p>
+        <h2 class="titulo" data-i18n="tec.titulo">What the work is made with</h2>
+        <div class="tec">
+          <div class="tec-grupo">
+            <h3 data-i18n="tec.linguagens">Languages</h3>
+            <ul><li>Python</li><li>TypeScript</li><li>JavaScript</li><li>Rust</li><li>Dart</li><li>C#</li></ul>
+          </div>
+          <div class="tec-grupo">
+            <h3 data-i18n="tec.front">Frontend &amp; Web</h3>
+            <ul><li>Next.js</li><li>React</li><li>Angular</li><li>Tailwind CSS</li><li>HTML/CSS</li></ul>
+          </div>
+          <div class="tec-grupo">
+            <h3 data-i18n="tec.back">Backend</h3>
+            <ul><li>FastAPI</li><li>Flask</li><li>Django</li><li>Node.js</li><li>ASP.NET Core</li></ul>
+          </div>
+          <div class="tec-grupo">
+            <h3 data-i18n="tec.mobile">Mobile</h3>
+            <ul><li>Expo / React Native</li><li>Flutter</li></ul>
+          </div>
+          <div class="tec-grupo">
+            <h3 data-i18n="tec.dados">Databases</h3>
+            <ul><li>PostgreSQL</li><li>SQLite</li><li>MongoDB</li><li>MySQL</li><li>Firebase</li></ul>
+          </div>
+          <div class="tec-grupo">
+            <h3 data-i18n="tec.devops">DevOps &amp; Cloud</h3>
+            <ul><li>Docker</li><li>Git</li><li>GitHub Actions</li><li>Nginx</li><li>Vercel</li><li>Cloudflare</li><li>Linux</li></ul>
+          </div>
+          <div class="tec-grupo">
+            <h3 data-i18n="tec.msg">Messaging &amp; cache</h3>
+            <ul><li>Redis</li><li>RabbitMQ</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="cartaz cartaz-final" id="contato">
+      <div class="cartaz-fundo" aria-hidden="true">
+        <svg viewBox="0 0 220 280" class="silhueta silhueta-binaria" preserveAspectRatio="xMidYMax meet">
+          <rect width="220" height="280" fill="url(#padrao-bin)" clip-path="url(#corte-retrato)" />
+        </svg>
+      </div>
+      <div class="limite cartaz-conteudo">
+        <p class="cartaz-kicker" data-i18n="fim.kicker">Let's make</p>
+        <h2 class="cartaz-script cartaz-script-menor"><span data-i18n="fim.palavra">your portfolio</span></h2>
+        <p class="cartaz-oficio" data-i18n="fim.oficio">this semester</p>
+        <p class="cartaz-lead" data-i18n="fim.lead">
+          A free diagnostic conversation, online, anywhere in the world. Bring what you have,
+          even if it is only an idea.
+        </p>
+        <div class="acoes">
+          <a class="btn btn-cheio" href="https://agendar.wired.rs" target="_blank" rel="noopener">
+            <span data-i18n="fim.cta">Choose a time</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <ul class="canais">
+          <li><a href="https://wa.me/5541998798238" target="_blank" rel="noopener"><span data-i18n="canais.whats">WhatsApp</span><span>+55 (41) 9 9879-8238</span></a></li>
+          <li><a href="mailto:luis&#64;wired.rs" data-email="luis&#64;wired.rs"><span data-i18n="canais.email">Email</span><span>luis&#64;wired.rs</span></a></li>
+          <li><a href="https://www.linkedin.com/in/luis-ota" target="_blank" rel="noopener me"><span>LinkedIn</span><span>linkedin.com/in/luis-ota</span></a></li>
+          <li><a href="https://github.com/luis-ota" target="_blank" rel="noopener me"><span>GitHub</span><span>github.com/luis-ota</span></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="limite rodape-linha">
+      <p>© <span id="ano">2026</span> Wired Layer Co. <span data-i18n="rodape.direitos">All rights reserved.</span></p>
+      <p class="rodape-links">
+        <a href="/" data-i18n="rodape.classico">classic version</a>
+        <a href="https://wired.rs/" target="_blank" rel="noopener">wired.rs ↗</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="/neo/script.js"></script>
+</body>
+</html>

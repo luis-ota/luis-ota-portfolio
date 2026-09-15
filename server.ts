@@ -59,6 +59,12 @@ const servidor = Bun.serve({
     }
 
     if (caminho === "/") caminho = "/index.html";
+
+    // Versão alternativa do portfólio (mundo "papelaria indigo").
+    if (caminho === "/neo" || caminho === "/neo/" || caminho === "/creative" || caminho === "/creative/") {
+      caminho = "/neo/index.html";
+    }
+
     if (caminho.includes("..")) {
       return responder("Não encontrado", 404);
     }
