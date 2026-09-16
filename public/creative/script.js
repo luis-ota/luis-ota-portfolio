@@ -60,7 +60,6 @@
       "precos.p1": "complete portfolio",
       "precos.p2": "simple changes after delivery",
       "precos.p3": "more complex changes",
-      "precos.nota": "symbolic prices, just to keep the scope closed after delivery.",
       "s1.title": "web & custom systems",
       "s1.p":
         "web platforms, panels, dashboards, and landing pages with next.js, react, typescript, and postgresql, from prototype to production.",
@@ -176,7 +175,6 @@
       "precos.p1": "portfólio completo",
       "precos.p2": "mudanças simples depois da entrega",
       "precos.p3": "mudanças mais complexas",
-      "precos.nota": "valores simbólicos, só para manter o escopo fechado depois da entrega.",
       "s1.title": "web & sistemas sob medida",
       "s1.p":
         "plataformas web, painéis, dashboards e landing pages com next.js, react, typescript e postgresql, do protótipo à produção.",
