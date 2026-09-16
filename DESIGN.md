@@ -3,10 +3,10 @@
 <!-- impeccable:design-schema 1 -->
 
 Two committed visual worlds live in this repository. The classic portfolio at `/`
-is the incumbent "ficha técnica" world. The neo portfolio at `/neo` (alias
-`/creative`) is the pinned "papelaria indigo" world derived from the studio's
-brand cards. Both share product truth from PRODUCT.md; each owns its own colors,
-type, and components.
+is the incumbent "ficha técnica" world. The pinned "papelaria indigo" world,
+derived from the studio's brand cards, now lives only at `/creative` (the old
+`/neo` path redirects there). Both share product truth from PRODUCT.md; each
+owns its own colors, type, and components.
 
 ## World 1: classic (ficha técnica / engenharia)
 
@@ -19,9 +19,11 @@ type, and components.
 - Motion: staggered `entrar` reveals with expo ease, marquee ticker, caret
   blink, one authored moment per view. Reduced motion draws everything static.
 
-## World 2: neo (papelaria indigo, pinned by the brand cards)
+## World 2: creative (papelaria indigo, pinned by the brand cards)
 
-- Surface: `/neo` (`public/neo/index.html`, `styles.css`, `script.js`).
+- Surface: `/creative` (`public/creative/index.html`, `styles.css`, `script.js`).
+  Contact is WhatsApp only, with prefilled messages, and the signature service
+  carries the price list (r$ 150 portfolio, r$ 10 simple changes, r$ 25 complex).
 - Ground: paper `#F4F1EA` and `#ECE8DE`, creme `#FBF9F4`; ink indigo `#2A2A8C`
   and `#1F1F6E`; periwinkle patterns `#A9AEE6` and `#C3C7EF`.
 - Type: Sora (600/700/800) for text; Yellowtail for the script wordmark.

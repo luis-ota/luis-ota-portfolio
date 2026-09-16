@@ -25,7 +25,7 @@
         'for <strong>actors, freelancers, content creators, and photographers</strong>',
       "cartaz.lead":
         "identity, structure, and the site itself: a portfolio at the level of your work. all from the same studio that ships web, mobile, automation, and ai.",
-      "cartaz.cta": "book a conversation",
+      "cartaz.cta": "message on whatsapp",
       "cartaz.whats": "whatsapp",
       "sobre.palavra": "who builds",
       "sobre.p1":
@@ -56,6 +56,11 @@
       "destaque.l3": "texts, sections, and calls to action",
       "destaque.l4": "domain, deploy, and updates",
       "destaque.cta": "start my portfolio",
+      "precos.titulo": "prices",
+      "precos.p1": "complete portfolio",
+      "precos.p2": "simple changes after delivery",
+      "precos.p3": "more complex changes",
+      "precos.nota": "symbolic prices, just to keep the scope closed after delivery.",
       "s1.title": "web & custom systems",
       "s1.p":
         "web platforms, panels, dashboards, and landing pages with next.js, react, typescript, and postgresql, from prototype to production.",
@@ -110,7 +115,7 @@
       "fim.oficio": "this semester",
       "fim.lead":
         "a free diagnostic conversation, online, anywhere in the world. bring what you have, even if it is only an idea.",
-      "fim.cta": "choose a time",
+      "fim.cta": "message on whatsapp",
       "canais.whats": "whatsapp",
       "canais.email": "email",
       "rodape.direitos": "all rights reserved.",
@@ -136,7 +141,7 @@
         'para <strong>atores, freelancers, criadores de conteúdo e fotógrafos</strong>',
       "cartaz.lead":
         "identidade, estrutura e o site: um portfólio do nível do seu trabalho. tudo pelo mesmo estúdio que entrega web, mobile, automação e ia.",
-      "cartaz.cta": "agendar uma conversa",
+      "cartaz.cta": "chamar no whatsapp",
       "cartaz.whats": "whatsapp",
       "sobre.palavra": "quem constrói",
       "sobre.p1":
@@ -167,6 +172,11 @@
       "destaque.l3": "textos, seções e chamadas para ação",
       "destaque.l4": "domínio, deploy e atualizações",
       "destaque.cta": "começar meu portfólio",
+      "precos.titulo": "valores",
+      "precos.p1": "portfólio completo",
+      "precos.p2": "mudanças simples depois da entrega",
+      "precos.p3": "mudanças mais complexas",
+      "precos.nota": "valores simbólicos, só para manter o escopo fechado depois da entrega.",
       "s1.title": "web & sistemas sob medida",
       "s1.p":
         "plataformas web, painéis, dashboards e landing pages com next.js, react, typescript e postgresql, do protótipo à produção.",
@@ -221,7 +231,7 @@
       "fim.oficio": "neste semestre",
       "fim.lead":
         "uma conversa de diagnóstico gratuita, online, de qualquer lugar. traga o que você tem, mesmo que seja só a ideia.",
-      "fim.cta": "escolher um horário",
+      "fim.cta": "chamar no whatsapp",
       "canais.whats": "whatsapp",
       "canais.email": "e-mail",
       "rodape.direitos": "todos os direitos reservados.",

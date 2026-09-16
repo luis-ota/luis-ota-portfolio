@@ -505,7 +505,58 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   font-weight: 700;
   letter-spacing: -0.01em;
 }
-.servico p { color: var(--indigo-suave); font-size: 0.95rem; max-width: 70ch; }
+.servico p {
+  grid-column: 2;
+  color: var(--indigo-suave);
+  font-size: 0.95rem;
+  max-width: 70ch;
+}
+
+/* ---------- valores (destaque) ---------- */
+
+.precos { margin-top: 24px; }
+
+.precos-titulo {
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--periwinkle);
+  margin-bottom: 10px;
+}
+
+.precos-lista {
+  border-top: 1px dashed rgba(251, 249, 244, 0.35);
+}
+
+.precos-lista li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 9px 2px;
+  border-bottom: 1px dashed rgba(251, 249, 244, 0.35);
+}
+
+.precos-lista span {
+  font-size: 0.92rem;
+  color: rgba(251, 249, 244, 0.88);
+}
+
+.precos-lista strong {
+  font-family: var(--script);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--creme);
+  white-space: nowrap;
+}
+
+.precos-nota {
+  margin-top: 10px;
+  font-size: 0.78rem;
+  color: rgba(251, 249, 244, 0.72);
+}
 
 /* ---------- projetos ---------- */
 
@@ -761,6 +812,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .poster { padding: 48px 22px 32px; }
   .destaque { padding: 34px 24px; }
   .servico { grid-template-columns: 1fr; gap: 8px; }
+  .servico p { grid-column: 1; }
   .relato { padding: 50px 24px 26px; }
   .relato-link { margin-left: 0; }
   .canal a span:last-child { font-size: 0.88rem; }

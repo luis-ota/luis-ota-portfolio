@@ -60,9 +60,16 @@ const servidor = Bun.serve({
 
     if (caminho === "/") caminho = "/index.html";
 
-    // Versões alternativas do portfólio (mundo "papelaria indigo").
+    // O mundo "papelaria indigo" agora vive só em /creative.
     if (caminho === "/neo" || caminho === "/neo/") {
-      caminho = "/neo/index.html";
+      return new Response(null, {
+        status: 302,
+        headers: {
+          location: "/creative",
+          "cache-control": "no-store",
+          ...CABECALHOS_FIXOS,
+        },
+      });
     }
     if (caminho === "/creative" || caminho === "/creative/") {
       caminho = "/creative/index.html";
