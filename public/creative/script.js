@@ -33,7 +33,6 @@
       "sobre.p2":
         "every portfolio is made for the person, not for a template: what you do, who you want to reach, and how the work should be seen. then the same hands build the site, deploy it, and keep it running.",
       "ficha.nome": "name",
-      "ficha.empresa": "company",
       "ficha.funcao": "role",
       "ficha.funcaoV": "full-stack developer",
       "ficha.formacao": "education",
@@ -148,7 +147,6 @@
       "sobre.p2":
         "cada portfólio é feito para a pessoa, não para um modelo: o que você faz, quem quer alcançar e como o trabalho deve ser visto. depois, as mesmas mãos constroem o site, colocam no ar e mantêm rodando.",
       "ficha.nome": "nome",
-      "ficha.empresa": "empresa",
       "ficha.funcao": "função",
       "ficha.funcaoV": "desenvolvedor full-stack",
       "ficha.formacao": "formação",
