@@ -145,6 +145,15 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 
 /* ---------- botões ---------- */
+/* seta sempre como texto, nunca emoji */
+.btn span[aria-hidden],
+.footer-blog,
+.footer-voltar,
+a[href^="https://blog"],
+.pular {
+  font-variant-emoji: text;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;

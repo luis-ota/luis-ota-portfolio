@@ -276,6 +276,13 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   justify-content: center;
 }
 
+/* seta sempre como texto, nunca emoji (alguns androids/safari renderizam ↗ como emoji) */
+.btn span[aria-hidden],
+.relato-link,
+.rodape-links a {
+  font-variant-emoji: text;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
