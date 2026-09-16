@@ -1048,13 +1048,15 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   transition: color 0.2s ease, border-color 0.2s ease;
 }
 .link-marca:hover { color: var(--pinheiro); border-bottom-color: var(--musgo-claro); }
-.footer-voltar {
+.footer-voltar,
+.footer-blog {
   font-family: var(--fonte-mono);
   font-size: 0.78rem;
   color: var(--tinta-suave);
   transition: color 0.2s ease;
 }
-.footer-voltar:hover { color: var(--pinheiro); }
+.footer-voltar:hover,
+.footer-blog:hover { color: var(--pinheiro); }
 
 /* ---------- reveal on scroll ---------- */
 .reveal { opacity: 0; }
