@@ -152,7 +152,7 @@
       "canais.email": "Email",
       "canais.location": "Location",
       "canais.locationV": "Curitiba, PR · Brazil",
-      "footer.text": "Wired Layer Co. · Luís Otávio Silva Santos · Full-Stack Developer · Curitiba, Brazil",
+      "footer.text": "· Luís Otávio Silva Santos · Full-Stack Developer · Curitiba, Brazil",
       "footer.back": "Back to top ↑",
       "terminal.lines": [
         "luis-ota@curitiba: ~",
@@ -311,7 +311,7 @@
       "canais.email": "E-mail",
       "canais.location": "Localização",
       "canais.locationV": "Curitiba, PR · Brasil",
-      "footer.text": "Wired Layer Co. · Luís Otávio Silva Santos · Desenvolvedor Full-Stack · Curitiba, PR",
+      "footer.text": "· Luís Otávio Silva Santos · Desenvolvedor Full-Stack · Curitiba, PR",
       "footer.back": "Voltar ao início ↑",
       "terminal.lines": [
         "luis-ota@curitiba: ~",

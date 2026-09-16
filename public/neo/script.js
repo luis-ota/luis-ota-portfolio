@@ -24,7 +24,7 @@
       "cartaz.publico":
         'for <strong>actors, freelancers, content creators, and photographers</strong>',
       "cartaz.lead":
-        "identity, structure, and the site itself: a portfolio at the level of the work it presents. all from the same studio that ships web, mobile, automation, and ai.",
+        "identity, structure, and the site itself: a portfolio at the level of your work. all from the same studio that ships web, mobile, automation, and ai.",
       "cartaz.cta": "book a conversation",
       "cartaz.whats": "whatsapp",
       "sobre.palavra": "who builds",
@@ -135,7 +135,7 @@
       "cartaz.publico":
         'para <strong>atores, freelancers, criadores de conteúdo e fotógrafos</strong>',
       "cartaz.lead":
-        "identidade, estrutura e o site: um portfólio no nível do trabalho que apresenta. tudo pelo mesmo estúdio que entrega web, mobile, automação e ia.",
+        "identidade, estrutura e o site: um portfólio do nível do seu trabalho. tudo pelo mesmo estúdio que entrega web, mobile, automação e ia.",
       "cartaz.cta": "agendar uma conversa",
       "cartaz.whats": "whatsapp",
       "sobre.palavra": "quem constrói",

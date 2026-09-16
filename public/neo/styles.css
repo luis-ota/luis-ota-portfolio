@@ -679,6 +679,14 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   flex-wrap: wrap;
   font-size: 0.82rem;
 }
+.link-marca {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dashed transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.link-marca:hover { color: var(--indigo); border-bottom-color: var(--periwinkle); }
+
 .rodape-links { display: flex; gap: 18px; }
 .rodape-links a {
   color: var(--periwinkle-claro);

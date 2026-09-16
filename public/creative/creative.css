@@ -65,6 +65,43 @@
   opacity: 0.32;
 }
 
+.fundo-losango {
+  bottom: 6%;
+  left: -4%;
+  width: min(34%, 300px);
+  opacity: 0.24;
+}
+
+.fundo-estrelas {
+  bottom: 4%;
+  left: -5%;
+  width: min(42%, 390px);
+  opacity: 0.22;
+}
+
+.fundo-quadrado {
+  top: 12%;
+  right: -5%;
+  width: min(38%, 330px);
+  opacity: 0.26;
+}
+
+.fundo-ascii {
+  bottom: 5%;
+  left: -4%;
+  width: min(36%, 320px);
+  opacity: 0.3;
+}
+
+.fundo-rio {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.33;
+}
+
 /* ---------- faíscas ---------- */
 
 .faiscas {
@@ -93,7 +130,7 @@
   50% { opacity: 0.78; transform: scale(1) rotate(14deg); }
 }
 
-.cartaz-final .cintila { color: var(--creme); }
+.cartaz-final .cintila { color: var(--indigo-suave); }
 
 /* ---------- símbolos escondidos ---------- */
 
@@ -111,6 +148,11 @@
   .fundo-dither { width: min(58%, 320px); left: -12%; opacity: 0.16; }
   .fundo-binario { width: min(56%, 320px); right: -10%; opacity: 0.18; }
   .fundo-globo { width: min(46%, 260px); right: -6%; opacity: 0.24; }
+  .fundo-losango { width: min(50%, 250px); left: -10%; opacity: 0.18; }
+  .fundo-estrelas { width: min(56%, 290px); left: -12%; opacity: 0.17; }
+  .fundo-quadrado { width: min(50%, 270px); right: -10%; opacity: 0.2; }
+  .fundo-ascii { width: min(48%, 260px); left: -10%; opacity: 0.18; }
+  .fundo-rio { opacity: 0.34; }
 }
 
 @media (max-width: 560px) {
@@ -119,6 +161,11 @@
   .fundo-binario { opacity: 0.12; }
   .fundo-globo { top: 4%; opacity: 0.18; }
   .fundo-onda { bottom: 2%; opacity: 0.38; }
+  .fundo-losango,
+  .fundo-estrelas,
+  .fundo-ascii { opacity: 0.12; }
+  .fundo-quadrado { opacity: 0.16; }
+  .fundo-rio { opacity: 0.3; }
   .cintila { opacity: 0.28; }
 }
 
