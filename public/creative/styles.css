@@ -625,6 +625,14 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   font-size: 0.96rem;
   max-width: 72ch;
 }
+.projeto-favicon {
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+  border: 1px solid var(--linha);
+  flex: none;
+}
+
 .projeto-links {
   margin-top: 16px;
   display: flex;
@@ -632,6 +640,9 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   gap: 10px 20px;
 }
 .projeto-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
   font-weight: 700;
   font-size: 0.88rem;
   color: var(--indigo);
