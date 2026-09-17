@@ -235,9 +235,9 @@
     }
   };
 
-  var idioma = "en";
+  var idioma = "pt";
   try {
-    if (localStorage.getItem(CHAVE) === "pt") idioma = "pt";
+    if (localStorage.getItem(CHAVE) === "en") idioma = "en";
   } catch (e) {}
 
   function t(chave) {
