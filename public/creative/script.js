@@ -80,6 +80,10 @@
       "p0.desc":
         "event agenda, institutional pages, and an anonymous community feed with moderation, built for a collective of advertising and cinema students at pucpr.",
       "p0.live": "live site",
+      "p6.tag": "landing page · bands",
+      "p6.title": "band communications, with isabella monteiro",
+      "p6.desc": "landing page and portfolio for band-focused communications: real work on display and a straight line to whatsapp for independent musicians.",
+      "relato.site": "band communications ➚",
       "p5.tag": "portfolio · actress",
       "p5.title": "isabella monteiro's portfolio, actress",
       "p5.desc": "portfolio site for a theater and audiovisual actress in curitiba: career, works, and professional contact.",
@@ -100,7 +104,7 @@
       "p4.desc": "utility for monitoring the linux swap area, with 3,028 downloads since launch.",
       "relatos.rotulo": "client review",
       "relato.quote":
-        "luís built the afroretratos platform exactly as we envisioned: fast, easy to use, and with a level of finish i rarely see. then he built my own portfolio too, with the same care: identity, copy, and a site that actually looks like me. communication was clear from day one and the result went beyond what we expected.",
+        "luís built the afroretratos platform exactly as we envisioned: fast, easy to use, and with a level of finish i rarely see. then he built my own portfolio and the page for my band communications, with the same care: identity, copy, and a site that actually looks like me. communication was clear from day one and the result went beyond what we expected.",
       "relato.cargo": "advertising professional · afroretratos",
       "tec.rotulo": "tools",
       "tec.titulo": "what the work is made with",
@@ -197,6 +201,10 @@
       "p0.desc":
         "agenda de eventos, páginas institucionais e feed anônimo da comunidade com moderação, feito para um coletivo de estudantes de publicidade e cinema da pucpr.",
       "p0.live": "site no ar",
+      "p6.tag": "landing page · bandas",
+      "p6.title": "comunicação para bandas, com a isabella monteiro",
+      "p6.desc": "landing page e portfólio de comunicação especializada em bandas e músicos independentes: serviços, trabalhos reais e contato direto no whatsapp.",
+      "relato.site": "comunicação para bandas ➚",
       "p5.tag": "portfólio · atriz",
       "p5.title": "portfólio de isabella monteiro, atriz",
       "p5.desc": "site de portfólio para atriz de teatro e audiovisual em curitiba: trajetória, trabalhos e contato profissional.",
@@ -217,7 +225,7 @@
       "p4.desc": "utilitário para monitoramento da área de swap no linux, com 3.028 downloads desde o lançamento.",
       "relatos.rotulo": "relato de cliente",
       "relato.quote":
-        "o luís construiu a plataforma do afroretratos exatamente como imaginamos: rápida, fácil de usar e com um nível de acabamento que raramente vejo. depois fez também o meu portfólio, com o mesmo cuidado: identidade, textos e um site com a minha cara. a comunicação foi clara desde o primeiro dia e o resultado superou o que esperávamos.",
+        "o luís construiu a plataforma do afroretratos exatamente como imaginamos: rápida, fácil de usar e com um nível de acabamento que raramente vejo. depois fez também o meu portfólio e a página de comunicação para bandas, com o mesmo cuidado: identidade, textos e um site com a minha cara. a comunicação foi clara desde o primeiro dia e o resultado superou o que esperávamos.",
       "relato.cargo": "publicitária · afroretratos",
       "tec.rotulo": "ferramentas",
       "tec.titulo": "com o que o trabalho é feito",

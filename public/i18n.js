@@ -108,6 +108,11 @@
       "p0.desc":
         "Event agenda, institutional pages, and an anonymous community feed with moderation, built for a collective of advertising and cinema students at PUCPR.",
       "p0.live": "Live site",
+      "p5.tag": "band communications",
+      "p5.title": "Band communications landing page",
+      "p5.desc":
+        "Landing page and portfolio for band-focused communications: real work on display and a straight line to WhatsApp for independent musicians.",
+      "p5.live": "Live site",
       "p1.tag": "mobile",
       "p1.title": "Freight and delivery management app",
       "p1.desc":
@@ -137,9 +142,10 @@
       "relatos.title": "What clients say about working with me",
       "relato1.context": "Client review · AfroRetratos",
       "relato1.quote":
-        "Luís built the AfroRetratos platform exactly as we envisioned: fast, easy to use, and with a level of finish I rarely see. Communication was clear from day one, every detail was handled with care, and the result went beyond what we expected. I recommend him without hesitation.",
+        "Luís built the AfroRetratos platform exactly as we envisioned: fast, easy to use, and with a level of finish I rarely see. Then he built my portfolio and the page for my band communications with the same care. Communication was clear from day one, every detail was handled with care, and the result went beyond what we expected. I recommend him without hesitation.",
       "relato1.role": "Advertising professional · AfroRetratos",
       "relato1.handle": "@isacreates.comm",
+      "relato1.site": "Band communications page",
       "contato.eyebrow": "Scheduling & contact",
       "contato.title": "Let's talk about your project?",
       "ag.badge": "Free discovery call",
@@ -267,6 +273,11 @@
       "p0.desc":
         "Agenda de eventos, páginas institucionais e feed anônimo da comunidade com moderação, feito para um coletivo de estudantes de Publicidade e Cinema da PUCPR.",
       "p0.live": "Site no ar",
+      "p5.tag": "comunicação para bandas",
+      "p5.title": "Landing page de comunicação para bandas",
+      "p5.desc":
+        "Landing page e portfólio de comunicação especializada em bandas: trabalhos reais em vitrine e contato direto no WhatsApp para músicos independentes.",
+      "p5.live": "Site no ar",
       "p1.tag": "mobile",
       "p1.title": "App de gestão de fretes e entregas",
       "p1.desc":
@@ -296,9 +307,10 @@
       "relatos.title": "O que dizem sobre trabalhar comigo",
       "relato1.context": "Relato de cliente · AfroRetratos",
       "relato1.quote":
-        "O Luís construiu a plataforma do AfroRetratos exatamente como imaginamos: rápida, fácil de usar e com um nível de acabamento que raramente vejo. A comunicação foi clara desde o primeiro dia, cada detalhe foi tratado com cuidado e o resultado superou o que esperávamos. Recomendo sem hesitar.",
+        "O Luís construiu a plataforma do AfroRetratos exatamente como imaginamos: rápida, fácil de usar e com um nível de acabamento que raramente vejo. Depois fez o meu portfólio e a página de comunicação para bandas com o mesmo cuidado. A comunicação foi clara desde o primeiro dia, cada detalhe foi tratado com cuidado e o resultado superou o que esperávamos. Recomendo sem hesitar.",
       "relato1.role": "Publicitária · AfroRetratos",
       "relato1.handle": "@isacreates.comm",
+      "relato1.site": "Página de comunicação para bandas",
       "contato.eyebrow": "Agendamento & contato",
       "contato.title": "Vamos conversar sobre o seu projeto?",
       "ag.badge": "Reunião de diagnóstico gratuita",
